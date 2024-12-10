@@ -209,7 +209,7 @@
 					</div>
 				  </div>
            <div class="hidden-lg col-xs-12"> 
-                  <a class ="c-button small2 bg-dr-blue-2 hv-dr-blue-2-o " href="<?php echo base_url()?>vendors/kategori/gedung"><span>Lihat semua Gedungaa</span></a>
+                  <a class ="c-button small2 bg-dr-blue-2 hv-dr-blue-2-o " href="<?php echo base_url()?>vendors/kategori/gedung"><span>Lihat semua Gedung</span></a>
                 
           </div> 
     		</div>
@@ -220,18 +220,25 @@
 		</div>
     <div class="main-wraper">
         <div class="container-fluid">
-    		<div class="row">
-    			<div class="col-md-6">
-    				<div class="second-title">
-    					<h2>Dokumentasi</h2>
-    					</div>
-    			</div>
-          <div class="col-md-6">
-    				<div class="third-title">
-            <a href="<?php echo base_url()?>vendors/kategori/dokumentasi"><h4>Lihat semua Dokumentasi</h4></a>
-    					</div>
-    			</div>
+        <div class="row hidden-xs hidden-md">       
+          			<div class="col-md-6">
+          				<div class="second-title">
+          					<h2>Dokumentasi</h2>
+          					</div>
+          			</div>
+                <div class="col-md-6">
+          				<div class="third-title">
+                  <a href="<?php echo base_url()?>vendors/kategori/dokumentasi"><h4>Lihat semua Dokumentasi</h4></a>
+          					</div>
+          			</div>            
     		</div>
+        <div class="row hidden-lg">       
+                <div class="col-md-6">
+                  <div class="second-title">
+                    <h2>Dokumentasi</h2>
+                    </div>
+                </div>                          
+        </div>
     		<div class="row">
     			   <div class="arrows">
     				<div class="swiper-container hotel-slider" data-speed="1000" data-center="0" data-slides-per-view="responsive" data-mob-slides="1" data-xs-slides="2" data-sm-slides="2" data-md-slides="3" data-lg-slides="5" data-add-slides="5" >
@@ -284,28 +291,38 @@
 							<div class="swiper-arrow-right arrows-travel"><span class="fa fa-angle-right"></span></div>
 					</div>
 				  </div>
+          <div class="hidden-lg col-xs-12"> 
+                  <a class ="c-button small2 bg-dr-blue-2 hv-dr-blue-2-o " href="<?php echo base_url()?>vendors/kategori/dokumentasi"><span>Lihat semua Dokumentasi</span></a>  
+          </div>
     		</div>
 		</div>
     <div class="main-wraper">
         <div class="container-fluid">
-    		<div class="row">
-    			<div class="col-md-6">
-    				<div class="second-title">
-    					<h2>Catering</h2>
-    					</div>
-    			</div>
-          <div class="col-md-6">
-    				<div class="third-title">
-            <a href="<?php echo base_url()?>vendors/kategori/catering"><h4>Lihat semua Catering</h4></a>
-    					</div>
-    			</div>
+    		<div class="row hidden-xs hidden-md">       
+          			<div class="col-md-6">
+          				<div class="second-title">
+          					<h2>Catering</h2>
+          					</div>
+          			</div>
+                <div class="col-md-6">
+          				<div class="third-title">
+                  <a href="<?php echo base_url()?>vendors/kategori/catering"><h4>Lihat semua Catering</h4></a>
+          					</div>
+          			</div>            
     		</div>
+        <div class="row hidden-lg">       
+                <div class="col-md-6">
+                  <div class="second-title">
+                    <h2>Catering</h2>
+                    </div>
+                </div>                          
+        </div>
     		<div class="row">
     			   <div class="arrows">
     				<div class="swiper-container hotel-slider" data-speed="1000" data-center="0" data-slides-per-view="responsive" data-mob-slides="1" data-xs-slides="2" data-sm-slides="2" data-md-slides="3" data-lg-slides="5" data-add-slides="5" >
 						  <div class="swiper-wrapper">
                 <?php
-                      foreach ($post_news as $post) {
+                      foreach ($post_catering as $post) {
 
                 ?>
                 <div class="swiper-slide">
@@ -352,28 +369,38 @@
 							<div class="swiper-arrow-right arrows-travel"><span class="fa fa-angle-right"></span></div>
 					</div>
 				  </div>
+          <div class="hidden-lg col-xs-12"> 
+                  <a class ="c-button small2 bg-dr-blue-2 hv-dr-blue-2-o " href="<?php echo base_url()?>vendors/kategori/catering"><span>Lihat semua Catering</span></a>   
+          </div> 
     		</div>
 		</div>
     <div class="main-wraper">
         <div class="container-fluid">
-    		<div class="row">
-    			<div class="col-md-6">
-    				<div class="second-title">
-    					<h2>Hair & Makeup</h2>
-    					</div>
-    			</div>
-          <div class="col-md-6">
-    				<div class="third-title">
-            <a href="<?php echo base_url()?>vendors/kategori/mua"><h4>Lihat semua Hair & Makeup</h4></a>
-    					</div>
-    			</div>
+    		<div class="row hidden-xs hidden-md">       
+          			<div class="col-md-6">
+          				<div class="second-title">
+          					<h2>Hair & Makeup</h2>
+          					</div>
+          			</div>
+                <div class="col-md-6">
+          				<div class="third-title">
+                  <a href="<?php echo base_url()?>vendors/kategori/mua"><h4>Lihat semua Hair & Makeup</h4></a>
+          					</div>
+          			</div>            
     		</div>
+        <div class="row hidden-lg">       
+                <div class="col-md-6">
+                  <div class="second-title">
+                    <h2>Hair & Makeup</h2>
+                    </div>
+                </div>                          
+        </div>
     		<div class="row">
     			   <div class="arrows">
     				<div class="swiper-container hotel-slider" data-speed="1000" data-center="0" data-slides-per-view="responsive" data-mob-slides="1" data-xs-slides="2" data-sm-slides="2" data-md-slides="3" data-lg-slides="5" data-add-slides="5" >
 						  <div class="swiper-wrapper">
                 <?php
-                      foreach ($post_news as $post) {
+                      foreach ($post_mua as $post) {
 
                 ?>
                 <div class="swiper-slide">
@@ -420,28 +447,38 @@
 							<div class="swiper-arrow-right arrows-travel"><span class="fa fa-angle-right"></span></div>
 					</div>
 				  </div>
+          <div class="hidden-lg col-xs-12"> 
+                  <a class ="c-button small2 bg-dr-blue-2 hv-dr-blue-2-o " href="<?php echo base_url()?>vendors/kategori/mua"><span>Lihat semua Hair & Makeup</span></a>   
+          </div> 
     		</div>
 		</div>
     <div class="main-wraper">
         <div class="container-fluid">
-    		<div class="row">
-    			<div class="col-md-6">
-    				<div class="second-title">
-    					<h2>Gaun & Busana</h2>
-    					</div>
-    			</div>
-          <div class="col-md-6">
-    				<div class="third-title">
-            <a href="<?php echo base_url()?>vendors/kategori/mua"><h4>Lihat semua Gaun & Busana</h4></a>
-    					</div>
-    			</div>
+    		<div class="row hidden-xs hidden-md">       
+          			<div class="col-md-6">
+          				<div class="second-title">
+          					<h2>Gaun & Busana</h2>
+          					</div>
+          			</div>
+                <div class="col-md-6">
+          				<div class="third-title">
+                  <a href="<?php echo base_url()?>vendors/kategori/mua"><h4>Lihat semua Gaun & Busana</h4></a>
+          					</div>
+          			</div>            
     		</div>
+        <div class="row hidden-lg">       
+                <div class="col-md-6">
+                  <div class="second-title">
+                    <h2>Gaun & Busana</h2>
+                    </div>
+                </div>                          
+        </div>
     		<div class="row">
     			   <div class="arrows">
     				<div class="swiper-container hotel-slider" data-speed="1000" data-center="0" data-slides-per-view="responsive" data-mob-slides="1" data-xs-slides="2" data-sm-slides="2" data-md-slides="3" data-lg-slides="5" data-add-slides="5" >
 						  <div class="swiper-wrapper">
                 <?php
-                      foreach ($post_news as $post) {
+                      foreach ($post_gaun as $post) {
 
                 ?>
                 <div class="swiper-slide">
@@ -488,28 +525,38 @@
 							<div class="swiper-arrow-right arrows-travel"><span class="fa fa-angle-right"></span></div>
 					</div>
 				  </div>
+          <div class="hidden-lg col-xs-12"> 
+                  <a class ="c-button small2 bg-dr-blue-2 hv-dr-blue-2-o " href="<?php echo base_url()?>vendors/kategori/mua"><span>Lihat semua Gaun & Busana</span></a>   
+          </div> 
     		</div>
 		</div>
     <div class="main-wraper">
         <div class="container-fluid">
-    		<div class="row">
-    			<div class="col-md-6">
-    				<div class="second-title">
-    					<h2>Dekorasi & Tata Lampu</h2>
-    					</div>
-    			</div>
-          <div class="col-md-6">
-    				<div class="third-title">
-            <a href="<?php echo base_url()?>vendors/kategori/dekorasi"><h4>Lihat semua Dekorasi</h4></a>
-    					</div>
-    			</div>
+    		<div class="row hidden-xs hidden-md">       
+          			<div class="col-md-6">
+          				<div class="second-title">
+          					<h2>Dekorasi & Tata Lampu</h2>
+          					</div>
+          			</div>
+                <div class="col-md-6">
+          				<div class="third-title">
+                  <a href="<?php echo base_url()?>vendors/kategori/dekorasi"><h4>Lihat semua Dekorasi & Tata Lampu</h4></a>
+          					</div>
+          			</div>            
     		</div>
+        <div class="row hidden-lg">       
+                <div class="col-md-6">
+                  <div class="second-title">
+                    <h2>Dekorasi & Tata Lampu</h2>
+                    </div>
+                </div>                          
+        </div>
     		<div class="row">
     			   <div class="arrows">
     				<div class="swiper-container hotel-slider" data-speed="1000" data-center="0" data-slides-per-view="responsive" data-mob-slides="1" data-xs-slides="2" data-sm-slides="2" data-md-slides="3" data-lg-slides="5" data-add-slides="5" >
 						  <div class="swiper-wrapper">
                 <?php
-                      foreach ($post_news as $post) {
+                      foreach ($post_dekorasi as $post) {
 
                 ?>
                 <div class="swiper-slide">
@@ -556,28 +603,38 @@
 							<div class="swiper-arrow-right arrows-travel"><span class="fa fa-angle-right"></span></div>
 					</div>
 				  </div>
+          <div class="hidden-lg col-xs-12"> 
+                  <a class ="c-button small2 bg-dr-blue-2 hv-dr-blue-2-o " href="<?php echo base_url()?>vendors/kategori/dekorasi"><span>Lihat semua Dekorasi & Tata Lampu</span></a>   
+          </div> 
     		</div>
 		</div>
     <div class="main-wraper">
         <div class="container-fluid">
-    		<div class="row">
-    			<div class="col-md-6">
-    				<div class="second-title">
-    					<h2>Souvenir</h2>
-    					</div>
-    			</div>
-          <div class="col-md-6">
-    				<div class="third-title">
-            <a href="<?php echo base_url()?>vendors/kategori/souvenir"><h4>Lihat semua Souvenir</h4></a>
-    					</div>
-    			</div>
+    		<div class="row hidden-xs hidden-md">       
+          			<div class="col-md-6">
+          				<div class="second-title">
+          					<h2>Souvenir</h2>
+          					</div>
+          			</div>
+                <div class="col-md-6">
+          				<div class="third-title">
+                  <a href="<?php echo base_url()?>vendors/kategori/souvenir"><h4>Lihat semua Souvenir</h4></a>
+          					</div>
+          			</div>            
     		</div>
+        <div class="row hidden-lg">       
+                <div class="col-md-6">
+                  <div class="second-title">
+                    <h2>Souvenir</h2>
+                    </div>
+                </div>                          
+        </div>
     		<div class="row">
     			   <div class="arrows">
     				<div class="swiper-container hotel-slider" data-speed="1000" data-center="0" data-slides-per-view="responsive" data-mob-slides="1" data-xs-slides="2" data-sm-slides="2" data-md-slides="3" data-lg-slides="5" data-add-slides="5" >
 						  <div class="swiper-wrapper">
                 <?php
-                      foreach ($post_news as $post) {
+                      foreach ($post_souvenir as $post) {
 
                 ?>
                 <div class="swiper-slide">
@@ -624,28 +681,38 @@
 							<div class="swiper-arrow-right arrows-travel"><span class="fa fa-angle-right"></span></div>
 					</div>
 				  </div>
+          <div class="hidden-lg col-xs-12"> 
+                  <a class ="c-button small2 bg-dr-blue-2 hv-dr-blue-2-o " href="<?php echo base_url()?>vendors/kategori/souvenir"><span>Lihat semua Souvenir</span></a>   
+          </div> 
     		</div>
 		</div>
     <div class="main-wraper">
         <div class="container-fluid">
-    		<div class="row">
-    			<div class="col-md-6">
-    				<div class="second-title">
-    					<h2>Entertainment</h2>
-    					</div>
-    			</div>
-          <div class="col-md-6">
-    				<div class="third-title">
-            <a href="<?php echo base_url()?>vendors/kategori/seni-musik"><h4>Lihat semua Entertainment</h4></a>
-    					</div>
-    			</div>
+    		<div class="row hidden-xs hidden-md">       
+          			<div class="col-md-6">
+          				<div class="second-title">
+          					<h2>Entertain</h2>
+          					</div>
+          			</div>
+                <div class="col-md-6">
+          				<div class="third-title">
+                  <a href="<?php echo base_url()?>vendors/kategori/seni-musik"><h4>Lihat semua Entertain</h4></a>
+          					</div>
+          			</div>            
     		</div>
+        <div class="row hidden-lg">       
+                <div class="col-md-6">
+                  <div class="second-title">
+                    <h2>Entertain</h2>
+                    </div>
+                </div>                          
+        </div>
     		<div class="row">
     			   <div class="arrows">
     				<div class="swiper-container hotel-slider" data-speed="1000" data-center="0" data-slides-per-view="responsive" data-mob-slides="1" data-xs-slides="2" data-sm-slides="2" data-md-slides="3" data-lg-slides="5" data-add-slides="5" >
 						  <div class="swiper-wrapper">
                 <?php
-                      foreach ($post_news as $post) {
+                      foreach ($post_entertain as $post) {
 
                 ?>
                 <div class="swiper-slide">
@@ -692,28 +759,38 @@
 							<div class="swiper-arrow-right arrows-travel"><span class="fa fa-angle-right"></span></div>
 					</div>
 				  </div>
+          <div class="hidden-lg col-xs-12"> 
+                  <a class ="c-button small2 bg-dr-blue-2 hv-dr-blue-2-o " href="<?php echo base_url()?>vendors/kategori/seni-musik"><span>Lihat semua Entertain</span></a>   
+          </div> 
     		</div>
 		</div>
     <div class="main-wraper">
         <div class="container-fluid">
-    		<div class="row">
-    			<div class="col-md-6">
-    				<div class="second-title">
-    					<h2>Master of Ceremony</h2>
-    					</div>
-    			</div>
-          <div class="col-md-6">
-    				<div class="third-title">
-            <a href="<?php echo base_url()?>vendors/kategori/mc"><h4>Lihat semua MC</h4></a>
-    					</div>
-    			</div>
+    		<div class="row hidden-xs hidden-md">       
+          			<div class="col-md-6">
+          				<div class="second-title">
+          					<h2>Master of Ceremony</h2>
+          					</div>
+          			</div>
+                <div class="col-md-6">
+          				<div class="third-title">
+                  <a href="<?php echo base_url()?>vendors/kategori/mc"><h4>Lihat semua Master of Ceremony</h4></a>
+          					</div>
+          			</div>            
     		</div>
+        <div class="row hidden-lg">       
+                <div class="col-md-6">
+                  <div class="second-title">
+                    <h2>Master of Ceremony</h2>
+                    </div>
+                </div>                          
+        </div>
     		<div class="row">
     			   <div class="arrows">
     				<div class="swiper-container hotel-slider" data-speed="1000" data-center="0" data-slides-per-view="responsive" data-mob-slides="1" data-xs-slides="2" data-sm-slides="2" data-md-slides="3" data-lg-slides="5" data-add-slides="5" >
 						  <div class="swiper-wrapper">
                 <?php
-                      foreach ($post_news as $post) {
+                      foreach ($post_mc as $post) {
 
                 ?>
                 <div class="swiper-slide">
@@ -760,28 +837,38 @@
 							<div class="swiper-arrow-right arrows-travel"><span class="fa fa-angle-right"></span></div>
 					</div>
 				  </div>
+          <div class="hidden-lg col-xs-12"> 
+                  <a class ="c-button small2 bg-dr-blue-2 hv-dr-blue-2-o " href="<?php echo base_url()?>vendors/kategori/mc"><span>Lihat semua Master of Ceremony</span></a>   
+          </div> 
     		</div>
 		</div>
     <div class="main-wraper">
         <div class="container-fluid">
-    		<div class="row">
-    			<div class="col-md-6">
-    				<div class="second-title">
-    					<h2>Perhiasan</h2>
-    					</div>
-    			</div>
-          <div class="col-md-6">
-    				<div class="third-title">
-            <a href="<?php echo base_url()?>vendors/kategori/souvenir"><h4>Lihat semua Perhiasan</h4></a>
-    					</div>
-    			</div>
+    		<div class="row hidden-xs hidden-md">       
+          			<div class="col-md-6">
+          				<div class="second-title">
+          					<h2>Perhiasan</h2>
+          					</div>
+          			</div>
+                <div class="col-md-6">
+          				<div class="third-title">
+                  <a href="<?php echo base_url()?>vendors/kategori/souvenir"><h4>Lihat semua Perhiasan</h4></a>
+          					</div>
+          			</div>            
     		</div>
+        <div class="row hidden-lg">       
+                <div class="col-md-6">
+                  <div class="second-title">
+                    <h2>Perhiasan</h2>
+                    </div>
+                </div>                          
+        </div>
     		<div class="row">
     			   <div class="arrows">
     				<div class="swiper-container hotel-slider" data-speed="1000" data-center="0" data-slides-per-view="responsive" data-mob-slides="1" data-xs-slides="2" data-sm-slides="2" data-md-slides="3" data-lg-slides="5" data-add-slides="5" >
 						  <div class="swiper-wrapper">
                 <?php
-                      foreach ($post_news as $post) {
+                      foreach ($post_perhiasan as $post) {
 
                 ?>
                 <div class="swiper-slide">
@@ -828,28 +915,38 @@
 							<div class="swiper-arrow-right arrows-travel"><span class="fa fa-angle-right"></span></div>
 					</div>
 				  </div>
+          <div class="hidden-lg col-xs-12"> 
+                  <a class ="c-button small2 bg-dr-blue-2 hv-dr-blue-2-o " href="<?php echo base_url()?>vendors/kategori/souvenir"><span>Lihat semua Perhiasan</span></a>   
+          </div> 
     		</div>
 		</div>
     <div class="main-wraper">
         <div class="container-fluid">
-    		<div class="row">
-    			<div class="col-md-6">
-    				<div class="second-title">
-    					<h2>Kue Pengantin</h2>
-    					</div>
-    			</div>
-          <div class="col-md-6">
-    				<div class="third-title">
-            <a href="<?php echo base_url()?>vendors/kategori/catering"><h4>Lihat semua Kue Pengantin</h4></a>
-    					</div>
-    			</div>
+    		<div class="row hidden-xs hidden-md">       
+          			<div class="col-md-6">
+          				<div class="second-title">
+          					<h2>Kue Pengantin</h2>
+          					</div>
+          			</div>
+                <div class="col-md-6">
+          				<div class="third-title">
+                  <a href="<?php echo base_url()?>vendors/kategori/catering"><h4>Lihat semua Kue Pengantin</h4></a>
+          					</div>
+          			</div>            
     		</div>
+        <div class="row hidden-lg">       
+                <div class="col-md-6">
+                  <div class="second-title">
+                    <h2>Kue Pengantin</h2>
+                    </div>
+                </div>                          
+        </div>
     		<div class="row">
     			   <div class="arrows">
     				<div class="swiper-container hotel-slider" data-speed="1000" data-center="0" data-slides-per-view="responsive" data-mob-slides="1" data-xs-slides="2" data-sm-slides="2" data-md-slides="3" data-lg-slides="5" data-add-slides="5" >
 						  <div class="swiper-wrapper">
                 <?php
-                      foreach ($post_news as $post) {
+                      foreach ($post_kue as $post) {
 
                 ?>
                 <div class="swiper-slide">
@@ -896,28 +993,38 @@
 							<div class="swiper-arrow-right arrows-travel"><span class="fa fa-angle-right"></span></div>
 					</div>
 				  </div>
+          <div class="hidden-lg col-xs-12"> 
+                  <a class ="c-button small2 bg-dr-blue-2 hv-dr-blue-2-o " href="<?php echo base_url()?>vendors/kategori/catering"><span>Lihat semua Kue Pengantin</span></a>   
+          </div> 
     		</div>
 		</div>
     <div class="main-wraper">
         <div class="container-fluid">
-    		<div class="row">
-    			<div class="col-md-6">
-    				<div class="second-title">
-    					<h2>Gubukan</h2>
-    					</div>
-    			</div>
-          <div class="col-md-6">
-    				<div class="third-title">
-            <a href="<?php echo base_url()?>vendors/kategori/catering"><h4>Lihat semua Gubukan</h4></a>
-    					</div>
-    			</div>
+    		<div class="row hidden-xs hidden-md">       
+          			<div class="col-md-6">
+          				<div class="second-title">
+          					<h2>Gubukan</h2>
+          					</div>
+          			</div>
+                <div class="col-md-6">
+          				<div class="third-title">
+                  <a href="<?php echo base_url()?>vendors/kategori/catering"><h4>Lihat semua Gubukan</h4></a>
+          					</div>
+          			</div>            
     		</div>
+        <div class="row hidden-lg">       
+                <div class="col-md-6">
+                  <div class="second-title">
+                    <h2>Gubukan</h2>
+                    </div>
+                </div>                          
+        </div>
     		<div class="row">
     			   <div class="arrows">
     				<div class="swiper-container hotel-slider" data-speed="1000" data-center="0" data-slides-per-view="responsive" data-mob-slides="1" data-xs-slides="2" data-sm-slides="2" data-md-slides="3" data-lg-slides="5" data-add-slides="5" >
 						  <div class="swiper-wrapper">
                 <?php
-                      foreach ($post_news as $post) {
+                      foreach ($post_gubukan as $post) {
 
                 ?>
                 <div class="swiper-slide">
@@ -964,28 +1071,38 @@
 							<div class="swiper-arrow-right arrows-travel"><span class="fa fa-angle-right"></span></div>
 					</div>
 				  </div>
+          <div class="hidden-lg col-xs-12"> 
+                  <a class ="c-button small2 bg-dr-blue-2 hv-dr-blue-2-o " href="<?php echo base_url()?>vendors/kategori/catering"><span>Lihat semua Gubukan</span></a>   
+          </div> 
     		</div>
 		</div>
     <div class="main-wraper padd-90">
         <div class="container-fluid">
-    		<div class="row">
-    			<div class="col-md-6">
-    				<div class="second-title">
-    					<h2>Tarian</h2>
-    					</div>
-    			</div>
-          <div class="col-md-6">
-    				<div class="third-title">
-            <a href="<?php echo base_url()?>vendors/kategori/seni-musik"><h4>Lihat semua Tarian</h4></a>
-    					</div>
-    			</div>
+    		<div class="row hidden-xs hidden-md">       
+          			<div class="col-md-6">
+          				<div class="second-title">
+          					<h2>Tarian</h2>
+          					</div>
+          			</div>
+                <div class="col-md-6">
+          				<div class="third-title">
+                  <a href="<?php echo base_url()?>vendors/kategori/seni-musik"><h4>Lihat semua Tarian</h4></a>
+          					</div>
+          			</div>            
     		</div>
+        <div class="row hidden-lg">       
+                <div class="col-md-6">
+                  <div class="second-title">
+                    <h2>Tarian</h2>
+                    </div>
+                </div>                          
+        </div>
     		<div class="row">
     			   <div class="arrows">
     				<div class="swiper-container hotel-slider" data-speed="1000" data-center="0" data-slides-per-view="responsive" data-mob-slides="1" data-xs-slides="2" data-sm-slides="2" data-md-slides="3" data-lg-slides="5" data-add-slides="5" >
 						  <div class="swiper-wrapper">
                 <?php
-                      foreach ($post_news as $post) {
+                      foreach ($post_tarian as $post) {
 
                 ?>
                 <div class="swiper-slide">
@@ -1033,6 +1150,9 @@
 					</div>
 				  </div>
     		</div>
+        <div class="hidden-lg col-xs-12"> 
+                  <a class ="c-button small2 bg-dr-blue-2 hv-dr-blue-2-o " href="<?php echo base_url()?>vendors/kategori/seni-musik"><span>Lihat semua Tarian</span></a>   
+          </div> 
 		</div>
 	  </div>
 
