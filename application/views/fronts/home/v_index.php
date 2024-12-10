@@ -136,24 +136,32 @@
 		</div> -->
     <div class="main-wraper">
         <div class="container-fluid">
-    		<div class="row">
-    			<div class="col-md-6">
-    				<div class="second-title">
-    					<h2>Gedung</h2>
-    					</div>
-    			</div>
-          <div class="col-md-6">
-    				<div class="third-title">
-            <a href="<?php echo base_url()?>vendors/kategori/gedung"><h4>Lihat semua Gedung</h4></a>
-    					</div>
-    			</div>
+    	  <div class="row hidden-xs hidden-md">       
+          			<div class="col-md-6">
+          				<div class="second-title">
+          					<h2>Gedung</h2>
+          					</div>
+          			</div>
+                <div class="col-md-6">
+          				<div class="third-title">
+                  <a href="<?php echo base_url()?>vendors/kategori/gedung"><h4>Lihat semua Gedung</h4></a>
+          					</div>
+          			</div>            
     		</div>
+        <div class="row hidden-lg">       
+                <div class="col-md-6">
+                  <div class="second-title">
+                    <h2>Gedung</h2>
+                    </div>
+                </div>                          
+        </div>
     		<div class="row">
     			   <div class="arrows">
     				<div class="swiper-container hotel-slider" data-speed="1000" data-center="0" data-slides-per-view="responsive" data-mob-slides="1" data-xs-slides="2" data-sm-slides="2" data-md-slides="3" data-lg-slides="5" data-add-slides="5" >
 						  <div class="swiper-wrapper">
                 <?php
-                      foreach ($post_news as $post) {
+                      foreach ($post_gedung as $post) {
+             
 
                 ?>
                 <div class="swiper-slide">
@@ -200,7 +208,15 @@
 							<div class="swiper-arrow-right arrows-travel"><span class="fa fa-angle-right"></span></div>
 					</div>
 				  </div>
+           <div class="hidden-lg col-xs-12"> 
+                  <a class ="c-button small2 bg-dr-blue-2 hv-dr-blue-2-o " href="<?php echo base_url()?>vendors/kategori/gedung"><span>Lihat semua Gedungaa</span></a>
+                
+          </div> 
     		</div>
+      
+          
+
+        
 		</div>
     <div class="main-wraper">
         <div class="container-fluid">
@@ -221,7 +237,7 @@
     				<div class="swiper-container hotel-slider" data-speed="1000" data-center="0" data-slides-per-view="responsive" data-mob-slides="1" data-xs-slides="2" data-sm-slides="2" data-md-slides="3" data-lg-slides="5" data-add-slides="5" >
 						  <div class="swiper-wrapper">
                 <?php
-                      foreach ($post_news as $post) {
+                      foreach ($post_dokumen as $post) {
 
                 ?>
                 <div class="swiper-slide">
