@@ -136,7 +136,7 @@
 		</div> -->
     <div class="main-wraper">
         <div class="container-fluid">
-    	  <div class="row hidden-xs hidden-md">       
+    	  <div class="row hidden-xs hidden-md hidden-sm">       
           			<div class="col-md-6">
           				<div class="second-title">
           					<h2>Gedung</h2>
@@ -220,7 +220,7 @@
 		</div>
     <div class="main-wraper">
         <div class="container-fluid">
-        <div class="row hidden-xs hidden-md">       
+        <div class="row hidden-xs hidden-md hidden-sm">       
           			<div class="col-md-6">
           				<div class="second-title">
           					<h2>Dokumentasi</h2>
@@ -298,7 +298,7 @@
 		</div>
     <div class="main-wraper">
         <div class="container-fluid">
-    		<div class="row hidden-xs hidden-md">       
+    		<div class="row hidden-xs hidden-md hidden-sm">       
           			<div class="col-md-6">
           				<div class="second-title">
           					<h2>Catering</h2>
@@ -376,7 +376,7 @@
 		</div>
     <div class="main-wraper">
         <div class="container-fluid">
-    		<div class="row hidden-xs hidden-md">       
+    		<div class="row hidden-xs hidden-md hidden-sm">       
           			<div class="col-md-6">
           				<div class="second-title">
           					<h2>Hair & Makeup</h2>
@@ -454,7 +454,7 @@
 		</div>
     <div class="main-wraper">
         <div class="container-fluid">
-    		<div class="row hidden-xs hidden-md">       
+    		<div class="row hidden-xs hidden-md hidden-sm">       
           			<div class="col-md-6">
           				<div class="second-title">
           					<h2>Gaun & Busana</h2>
@@ -532,7 +532,7 @@
 		</div>
     <div class="main-wraper">
         <div class="container-fluid">
-    		<div class="row hidden-xs hidden-md">       
+    		<div class="row hidden-xs hidden-md hidden-sm">       
           			<div class="col-md-6">
           				<div class="second-title">
           					<h2>Dekorasi & Tata Lampu</h2>
@@ -610,7 +610,7 @@
 		</div>
     <div class="main-wraper">
         <div class="container-fluid">
-    		<div class="row hidden-xs hidden-md">       
+    		<div class="row hidden-xs hidden-md hidden-sm">       
           			<div class="col-md-6">
           				<div class="second-title">
           					<h2>Souvenir</h2>
@@ -688,7 +688,7 @@
 		</div>
     <div class="main-wraper">
         <div class="container-fluid">
-    		<div class="row hidden-xs hidden-md">       
+    		<div class="row hidden-xs hidden-md hidden-sm">       
           			<div class="col-md-6">
           				<div class="second-title">
           					<h2>Entertain</h2>
@@ -766,7 +766,7 @@
 		</div>
     <div class="main-wraper">
         <div class="container-fluid">
-    		<div class="row hidden-xs hidden-md">       
+    		<div class="row hidden-xs hidden-md hidden-sm">       
           			<div class="col-md-6">
           				<div class="second-title">
           					<h2>Master of Ceremony</h2>
@@ -844,7 +844,7 @@
 		</div>
     <div class="main-wraper">
         <div class="container-fluid">
-    		<div class="row hidden-xs hidden-md">       
+    		<div class="row hidden-xs hidden-md hidden-sm">       
           			<div class="col-md-6">
           				<div class="second-title">
           					<h2>Perhiasan</h2>
@@ -922,7 +922,7 @@
 		</div>
     <div class="main-wraper">
         <div class="container-fluid">
-    		<div class="row hidden-xs hidden-md">       
+    		<div class="row hidden-xs hidden-md hidden-sm">       
           			<div class="col-md-6">
           				<div class="second-title">
           					<h2>Kue Pengantin</h2>
@@ -1000,7 +1000,7 @@
 		</div>
     <div class="main-wraper">
         <div class="container-fluid">
-    		<div class="row hidden-xs hidden-md">       
+    		<div class="row hidden-xs hidden-md hidden-sm">       
           			<div class="col-md-6">
           				<div class="second-title">
           					<h2>Gubukan</h2>
@@ -1078,7 +1078,7 @@
 		</div>
     <div class="main-wraper padd-90">
         <div class="container-fluid">
-    		<div class="row hidden-xs hidden-md">       
+    		<div class="row hidden-xs hidden-md hidden-sm">       
           			<div class="col-md-6">
           				<div class="second-title">
           					<h2>Tarian</h2>
