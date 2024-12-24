@@ -33,9 +33,11 @@
     <div class="list-wrapper ">
       <div class="container">
         <div class="grid-content clearfix">
-          <?php if (empty($results)) { ?>
-                    <p>Tidak ditemukan.</p>
-                <?php } else { ?>  
+          <?php if (empty($query)) { ?>
+            <p>Silakan masukkan kata kunci pencarian.</p>
+          <?php } elseif (empty($results)) { ?>
+            <p>Tidak ditemukan.</p>
+          <?php } else { ?>
             <?php foreach ($results as $post_new) { ?>
             <div class="col-md-6 responsive ">
                 <div class="hotel-choose">
