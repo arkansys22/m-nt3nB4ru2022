@@ -22,6 +22,23 @@
   <link rel="shortcut icon" href="<?php echo base_url()?>assets/frontend/aspanel/img/fav.png" type="image/x-icon">
 
   <?php $this->load->view('fronts/css')?>
+  <style>
+    .hotel-choose {
+      height: 250px; 
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .popular-img img {
+      height: 200px; 
+      object-fit: cover;
+    }
+    .hotel-choose .col-md-6 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  </style>
 </head>
   <body data-color="theme-1">
     <?php $this->load->view('fronts/loader')?>
@@ -30,7 +47,7 @@
       <img class="center-image" src="<?php echo base_url()?>assets/frontend/aspanel/img/bghead.jpg" alt="">
     </div>
 
-    <div class="list-wrapper ">
+    <div class="list-wrapper">
       <div class="container">
         <div class="grid-content clearfix">
           <?php if (empty($query)) { ?>
@@ -39,9 +56,9 @@
             <p style="margin-left: 20px;">Tidak ditemukan.</p>
           <?php } else { ?>
             <?php foreach ($results as $post_new) { ?>
-            <div class="col-md-6 responsive ">
-                <div class="hotel-choose">
-                    <div class="col-md-6 responsive">
+            <div class="col-md-6 responsive clearfix">
+                <div class="hotel-choose clearfix">
+                    <div class="col-md-6 responsive clearfix">
                       <div class="popular-img">
                         <?php if(empty($post_new->foto_h)) { ?>
                           <img height="100%" width="100%" src="<?php echo base_url() ?>assets/frontend/noimages.jpg" alt="">
@@ -85,7 +102,7 @@
           <?php } ?>
         </div>
 
-        <div class="row" >
+        <div class="row">
              <div class="c_pagination clearfix padd-120">
                     <?php  echo $this->pagination->create_links();  ?>
              </div>
