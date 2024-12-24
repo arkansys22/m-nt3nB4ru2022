@@ -34,9 +34,9 @@
       <div class="container">
         <div class="grid-content clearfix">
           <?php if (empty($query)) { ?>
-            <p>Silakan masukkan kata kunci pencarian.</p>
+            <p style="margin-left: 20px;">Silakan masukkan kata kunci pencarian.</p>
           <?php } elseif (empty($results)) { ?>
-            <p>Tidak ditemukan.</p>
+            <p style="margin-left: 20px;">Tidak ditemukan.</p>
           <?php } else { ?>
             <?php foreach ($results as $post_new) { ?>
             <div class="col-md-6 responsive ">
