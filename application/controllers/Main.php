@@ -16,10 +16,6 @@ class Main extends CI_Controller {
 		$this->data['post_souvenir'] = $this->Crud_m->view_where_join_three_limit('harga', 'user_bisnis', 'user_company', 'kabupaten', 'id_harga', 'user_company_account', '10', array('user_company_judul' => 'Souvenir'), 'RAND()');
 		$this->data['post_entertain'] = $this->Crud_m->view_where_join_three_limit('harga', 'user_bisnis', 'user_company', 'kabupaten', 'id_harga', 'user_company_account', '10', array('user_company_judul' => 'Seni Musik'), 'RAND()');
 		$this->data['post_mc'] = $this->Crud_m->view_where_join_three_limit('harga', 'user_bisnis', 'user_company', 'kabupaten', 'id_harga', 'user_company_account', '10', array('user_company_judul' => 'MC'), 'RAND()');
-		$this->data['post_perhiasan'] = $this->Crud_m->view_where_join_three_limit('harga', 'user_bisnis', 'user_company', 'kabupaten', 'id_harga', 'user_company_account', '10', array('user_company_judul' => 'Perhiasan'), 'RAND()');
-		$this->data['post_kue'] = $this->Crud_m->view_where_join_three_limit('harga', 'user_bisnis', 'user_company', 'kabupaten', 'id_harga', 'user_company_account', '10', array('user_company_judul' => 'Catering'), 'RAND()');
-		$this->data['post_gubukan'] = $this->Crud_m->view_where_join_three_limit('harga', 'user_bisnis', 'user_company', 'kabupaten', 'id_harga', 'user_company_account', '10', array('user_company_judul' => 'Catering'), 'RAND()');
-		$this->data['post_tarian'] = $this->Crud_m->view_where_join_three_limit('harga', 'user_bisnis', 'user_company', 'kabupaten', 'id_harga', 'user_company_account', '10', array('user_company_judul' => 'Seni Musik'), 'RAND()');
 		$this->data['post_news'] = $this->Crud_m->view_join_three('harga', 'user_bisnis', 'user_company', 'kabupaten', 'id_harga', 'user_company_account', '10', 'RAND()');
 
 		$this->load->view('fronts/home/v_index', $this->data);
