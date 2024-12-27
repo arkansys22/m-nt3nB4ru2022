@@ -38,7 +38,7 @@
           <div class="top-baner arrows">
         <div class="swiper-container offers-slider" data-autoplay="5000" data-loop="1" data-speed="500" data-slides-per-view="responsive" data-mob-slides="1" data-xs-slides="2" data-sm-slides="2" data-md-slides="4" data-lg-slides="4" data-add-slides="4">
           <div class="swiper-wrapper">
-              <?php $company = $this->Crud_m->view_where_ordering_limits('user_company',array('user_company_status'=>'1'),'user_company_account','ASC','1','12'); ?>
+              <?php $company = $this->Crud_m->view_where_ordering_limits('user_company',array('user_company_status'=>'1'),'user_company_account','ASC','1','10'); ?>
               <?php $no = 1; foreach ($company as $post) {  ?>
                       <div class="swiper-slide" >
                          <div class="offers-block radius-mask">
