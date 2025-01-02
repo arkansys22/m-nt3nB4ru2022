@@ -139,7 +139,7 @@
     	  <div class="row hidden-xs hidden-md hidden-sm">       
           			<div class="col-md-6">
           				<div class="second-title">
-          					<h2>Gedung</h2>
+          					<h2>Gedungsadas</h2>
           					</div>
           			</div>
                 <div class="col-md-6">
