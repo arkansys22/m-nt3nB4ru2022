@@ -135,9 +135,9 @@ public function kategori()
 				$data['rows'] = $row;
 				if (is_numeric($dari)) {
 				  $this->data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
-					$this->data['post_news'] = $this->Crud_m->view_join_where_kategori2('user_bisnis','user_company','kabupaten','user_company_account',array('user_company_judul_seo' => $this->uri->segment(3),'user_bisnis.user_company_account' => $row['user_company_account']),'id_bisnis','DESC',$dari,'20')->result();
+					$this->data['post_news'] = $this->Crud_m->view_join_where_kategori2('user_bisnis','user_company','kabupaten','user_company_account',array('user_company_judul_seo' => $this->uri->segment(3),'user_bisnis.user_company_account' => $row['user_company_account']),'id_bisnis','DESC',$dari,'10')->result();
 					$this->data['header']   = 'Daftar vendor wedding planner di mantenbaru yang menyediakan jasa wedding organizer yang mempermudah calon pasangan pengantin dalam memilih vendor pernikahan yang tepat';
-          $this->data['post_kategori'] = $this->Crud_m->view_ordering_limits('user_company','user_company_judul_seo','ASC',$dari,'20');
+          $this->data['post_kategori'] = $this->Crud_m->view_ordering_limits('user_company','user_company_judul_seo','ASC',$dari,'10');
 				}else{
 					redirect('main');
 				}
