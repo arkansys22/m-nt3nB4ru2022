@@ -32,7 +32,7 @@
             <?php } ?>              
             <form action="<?php echo base_url('search'); ?>" method="post" class="form-block">
               <div class="input-style-1 color-3">
-                <img src="img/search_icon_small.png" alt="">
+                <!-- <img src="img/search_icon_small.png" alt=""> -->
                 <input placeholder="Search.." type="text" name="query">
               </div>
             </form>
