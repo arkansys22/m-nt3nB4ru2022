@@ -91,13 +91,13 @@
 											<div class="contact-line"><p><strong>Alamat</strong></p></div>
 											<div class="contact-line"><p><?php echo $post_v->alamat?></p></div>
 											<hr>
-											<div class="share clearfix">
+											<!-- <div class="share clearfix">
 											   <div class="contact-line"><p><strong>Bagikan :</strong></p></div>
 
                                               <p></p><li class="color-fb"><a href="http://www.facebook.com/sharer.php?u=<?php echo base_url("vendors/$post_v->namabisnis_seo ") ?>" onclick="window.open('http://www.facebook.com/sharer.php?u=<?php echo base_url("vendors/$post_v->namabisnis_seo ")?>','newwindow','width=400,height=350');  return false;" title="Facebook" target="_blank" ><i class="fa fa-facebook" ></i>Facebook</a></li>
                                               <li class="color-ig"><a href="whatsapp://send?text=Produk terbaik <?php echo $company->user_company_judul?> <?php echo $post_v->namabisnis ?> kini ada di Mantenbaru. Klik <?php echo base_url("vendors/$post_v->namabisnis_seo ") ?> untuk info lebih lanjut"><i class="fa fa-whatsapp"></i>Whatsapp</a></li>
 
-                                            </div>
+                                            </div> -->
 					    </div>
   				    </div>
   			    </div>
