@@ -105,7 +105,57 @@
 											<div class="col-md-12">
 							 				<div class="simple-tab bg-white tab-3 color-3 tab-wrapper">
 							 					<div class="tab-nav-wrapper">
-							 						<div class="nav-tab  clearfix">
+												<div class="detail-top slider-wth-thumbs style-2">
+													<div class="swiper-container thumbnails-preview" data-autoplay="5000" data-loop="1" data-speed="5000" data-center="0" data-slides-per-view="1">
+														<div class="swiper-wrapper">
+															<?php
+															if (!empty($projek_utama)) {
+																foreach ($projek_utama as $projek) {
+																	if ($projek->username == $post_v->username) {
+																		for ($i = 1; $i <= 5; $i++) {
+																			$foto = $projek->{'foto' . $i};
+																			if (!empty($foto)) {
+																				$activeClass = ($i == 1) ? 'active' : '';
+																				echo '
+																				<div class="swiper-slide ' . $activeClass . '" data-val="' . ($i - 1) . '">
+																					<img class="img-responsive img-full" src="' . base_url('assets/frontend/projek/' . $foto) . '" alt="Foto ' . $i . '" style="max-width: 100%; max-height: 400px;">
+																				</div>
+																				';
+																			}
+																		}
+																	}
+																}
+															}
+															?>
+														</div>
+														<div class="pagination pagination-hidden"></div>
+													</div>
+													<div class="swiper-container thumbnails" data-autoplay="0" data-loop="0" data-speed="500" data-center="0" data-slides-per-view="responsive" data-xs-slides="3" data-sm-slides="5" data-md-slides="5" data-lg-slides="5" data-add-slides="5">
+														<div class="swiper-wrapper">
+															<?php
+															if (!empty($projek_utama)) {
+																foreach ($projek_utama as $projek) {
+																	if ($projek->username == $post_v->username) {
+																		for ($i = 1; $i <= 5; $i++) {
+																			$foto = $projek->{'foto' . $i};
+																			if (!empty($foto)) {
+																				$activeClass = ($i == 1) ? 'current active' : '';
+																				echo '
+																				<div class="swiper-slide ' . $activeClass . '" data-val="' . ($i - 1) . '">
+																					<img class="img-responsive img-full" src="' . base_url('assets/frontend/projek/' . $foto) . '" alt="Foto ' . $i . '" style="width: 100%; height: 100px; object-fit: cover;">
+																				</div>
+																				';
+																			}
+																		}
+																	}
+																}
+															}
+															?>
+														</div>
+														<div class="pagination hidden"></div>
+													</div>
+												</div>
+							 						<!-- <div class="nav-tab  clearfix">
                             <div class="nav-tab-item">
 							 							    <?php $jmla_harga = $this->Crud_m->view_where3('harga',$post_v->username,'1')->num_rows(); ?>
 							 								Harga(<?php echo $jmla_harga; ?>)
@@ -119,7 +169,7 @@
 							 								Ulasan
 							 							</div>
 
-							 						</div>
+							 						</div> -->
 							 					</div>
 							 					<div class="tabs-content clearfix">
                           <div class="tab-info active clearfix">

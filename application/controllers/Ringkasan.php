@@ -161,14 +161,15 @@ class Ringkasan extends CI_Controller
 									'username'=>$this->input->post('id'),
 									'judul'=>$this->input->post('judul'),
 									'judul_seo'=>$this->mylibrary->seo_title($this->input->post('judul')),
-									'youtube'=>$this->input->post('youtube'),
+									// 'youtube'=>$this->input->post('youtube'),
                   'projek_status'=>'1',
-									'deskripsi'=>$this->input->post('deskripsi'),
+									// 'deskripsi'=>$this->input->post('deskripsi'),
 									'hari'=>hari_ini(date('w')),
                   'tanggal'=>date('Y-m-d'),
                   'jam'=>date('H:i:s'),
-									'meta_deskripsi'=>$this->input->post('meta_deskripsi'),
-									'keyword'=>$this->input->post('keyword'));
+									// 'meta_deskripsi'=>$this->input->post('meta_deskripsi'),
+									// 'keyword'=>$this->input->post('keyword')
+								);
 								}
                 elseif ($hasil2['file_name']=='' && $hasil3['file_name']=='' && $hasil4['file_name']=='' && $hasil5['file_name']=='')
                 {
@@ -176,15 +177,16 @@ class Ringkasan extends CI_Controller
 										'username'=>$this->input->post('id'),
 										'judul'=>$this->input->post('judul'),
 										'judul_seo'=>$this->mylibrary->seo_title($this->input->post('judul')),
-										'youtube'=>$this->input->post('youtube'),
+										// 'youtube'=>$this->input->post('youtube'),
                     'projek_status'=>'1',
 										'foto1'=>$hasil['file_name'],
-										'deskripsi'=>$this->input->post('deskripsi'),
+										// 'deskripsi'=>$this->input->post('deskripsi'),
 										'hari'=>hari_ini(date('w')),
                     'tanggal'=>date('Y-m-d'),
                     'jam'=>date('H:i:s'),
-										'meta_deskripsi'=>$this->input->post('meta_deskripsi'),
-										'keyword'=>$this->input->post('keyword'));
+										// 'meta_deskripsi'=>$this->input->post('meta_deskripsi'),
+										// 'keyword'=>$this->input->post('keyword')
+									);
 									}
                   elseif ($hasil3['file_name']=='' && $hasil4['file_name']=='' && $hasil5['file_name']=='')
                   {
@@ -192,16 +194,17 @@ class Ringkasan extends CI_Controller
 											'username'=>$this->input->post('id'),
 											'judul'=>$this->input->post('judul'),
 											'judul_seo'=>$this->mylibrary->seo_title($this->input->post('judul')),
-											'youtube'=>$this->input->post('youtube'),
+											// 'youtube'=>$this->input->post('youtube'),
                       'projek_status'=>'1',
 											'foto1'=>$hasil['file_name'],
 											'foto2'=>$hasil2['file_name'],
-											'deskripsi'=>$this->input->post('deskripsi'),
+											// 'deskripsi'=>$this->input->post('deskripsi'),
 											'hari'=>hari_ini(date('w')),
                       'tanggal'=>date('Y-m-d'),
                       'jam'=>date('H:i:s'),
-											'meta_deskripsi'=>$this->input->post('meta_deskripsi'),
-											'keyword'=>$this->input->post('keyword'));
+											// 'meta_deskripsi'=>$this->input->post('meta_deskripsi'),
+											// 'keyword'=>$this->input->post('keyword')
+										);
 										}
                     elseif ($hasil4['file_name']=='' && $hasil5['file_name']=='')
                     {
@@ -209,17 +212,18 @@ class Ringkasan extends CI_Controller
 												'username'=>$this->input->post('id'),
 												'judul'=>$this->input->post('judul'),
 												'judul_seo'=>$this->mylibrary->seo_title($this->input->post('judul')),
-												'youtube'=>$this->input->post('youtube'),
+												// 'youtube'=>$this->input->post('youtube'),
                         'projek_status'=>'1',
 												'foto1'=>$hasil['file_name'],
 												'foto2'=>$hasil2['file_name'],
 												'foto3'=>$hasil3['file_name'],
-												'deskripsi'=>$this->input->post('deskripsi'),
+												// 'deskripsi'=>$this->input->post('deskripsi'),
 												'hari'=>hari_ini(date('w')),
                         'tanggal'=>date('Y-m-d'),
                         'jam'=>date('H:i:s'),
-												'meta_deskripsi'=>$this->input->post('meta_deskripsi'),
-												'keyword'=>$this->input->post('keyword'));
+												// 'meta_deskripsi'=>$this->input->post('meta_deskripsi'),
+												// 'keyword'=>$this->input->post('keyword')
+											);
 											}
                       elseif ($hasil5['file_name']=='')
                       {
@@ -227,18 +231,19 @@ class Ringkasan extends CI_Controller
 													'username'=>$this->input->post('id'),
 													'judul'=>$this->input->post('judul'),
 													'judul_seo'=>$this->mylibrary->seo_title($this->input->post('judul')),
-													'youtube'=>$this->input->post('youtube'),
+													// 'youtube'=>$this->input->post('youtube'),
                           'projek_status'=>'1',
 													'foto1'=>$hasil['file_name'],
 													'foto2'=>$hasil2['file_name'],
 													'foto3'=>$hasil3['file_name'],
 													'foto4'=>$hasil4['file_name'],
-													'deskripsi'=>$this->input->post('deskripsi'),
+													// 'deskripsi'=>$this->input->post('deskripsi'),
 													'hari'=>hari_ini(date('w')),
                           'tanggal'=>date('Y-m-d'),
                           'jam'=>date('H:i:s'),
-													'meta_deskripsi'=>$this->input->post('meta_deskripsi'),
-													'keyword'=>$this->input->post('keyword'));
+													// 'meta_deskripsi'=>$this->input->post('meta_deskripsi'),
+													// 'keyword'=>$this->input->post('keyword')
+												);
 								       }
                        else
                        {
@@ -246,20 +251,20 @@ class Ringkasan extends CI_Controller
         										'username'=>$this->input->post('id'),
         										'judul'=>$this->input->post('judul'),
         										'judul_seo'=>$this->mylibrary->seo_title($this->input->post('judul')),
-        										'youtube'=>$this->input->post('youtube'),
+        										// 'youtube'=>$this->input->post('youtube'),
                             'projek_status'=>'1',
-        										'deskripsi'=>$this->input->post('deskripsi'),
+        										// 'deskripsi'=>$this->input->post('deskripsi'),
         										'hari'=>hari_ini(date('w')),
                             'tanggal'=>date('Y-m-d'),
                             'jam'=>date('H:i:s'),
-        										'meta_deskripsi'=>$this->input->post('meta_deskripsi'),
+        										// 'meta_deskripsi'=>$this->input->post('meta_deskripsi'),
         										'foto1'=>$hasil['file_name'],
         										'foto2'=>$hasil2['file_name'],
         										'foto3'=>$hasil3['file_name'],
         										'foto4'=>$hasil4['file_name'],
         										'foto5'=>$hasil5['file_name'],
-        										'keyword'=>$this->input->post('keyword'));
-
+        										// 'keyword'=>$this->input->post('keyword')
+											);
 									     }
                        $this->Crud_m->insert('projek',$data);
                        redirect('ringkasan');
@@ -373,10 +378,11 @@ class Ringkasan extends CI_Controller
 								'username'=>$this->input->post('id'),
 								'judul'=>$this->input->post('judul'),
 								'judul_seo'=>$this->mylibrary->seo_title($this->input->post('judul')),
-								'youtube'=>$this->input->post('youtube'),
-								'deskripsi'=>$this->input->post('deskripsi'),
-								'meta_deskripsi'=>$this->input->post('meta_deskripsi'),
-								'keyword'=>$this->input->post('keyword'));
+								// 'youtube'=>$this->input->post('youtube'),
+								// 'deskripsi'=>$this->input->post('deskripsi'),
+								// 'meta_deskripsi'=>$this->input->post('meta_deskripsi'),
+								// 'keyword'=>$this->input->post('keyword')
+							);
 								$where = array('id_projek' => $this->input->post('id_projek'));
 							  $this->db->update('projek',$data,$where);
 
@@ -385,11 +391,12 @@ class Ringkasan extends CI_Controller
 									'username'=>$this->input->post('id'),
 									'judul'=>$this->input->post('judul'),
 									'judul_seo'=>$this->mylibrary->seo_title($this->input->post('judul')),
-									'youtube'=>$this->input->post('youtube'),
-									'deskripsi'=>$this->input->post('deskripsi'),
-									'meta_deskripsi'=>$this->input->post('meta_deskripsi'),
+									// 'youtube'=>$this->input->post('youtube'),
+									// 'deskripsi'=>$this->input->post('deskripsi'),
+									// 'meta_deskripsi'=>$this->input->post('meta_deskripsi'),
 									'foto1'=>$hasil['file_name'],
-									'keyword'=>$this->input->post('keyword'));
+									// 'keyword'=>$this->input->post('keyword')
+								);
 									$where = array('id_projek' => $this->input->post('id_projek'));
 									$_image = $this->db->get_where('projek',$where)->row();
 									$query = $this->db->update('projek',$data,$where);
@@ -401,11 +408,12 @@ class Ringkasan extends CI_Controller
 										'username'=>$this->input->post('id'),
 										'judul'=>$this->input->post('judul'),
 										'judul_seo'=>$this->mylibrary->seo_title($this->input->post('judul')),
-										'youtube'=>$this->input->post('youtube'),
-										'deskripsi'=>$this->input->post('deskripsi'),
-										'meta_deskripsi'=>$this->input->post('meta_deskripsi'),
+										// 'youtube'=>$this->input->post('youtube'),
+										// 'deskripsi'=>$this->input->post('deskripsi'),
+										// 'meta_deskripsi'=>$this->input->post('meta_deskripsi'),
 										'foto2'=>$hasil2['file_name'],
-										'keyword'=>$this->input->post('keyword'));
+										// 'keyword'=>$this->input->post('keyword')
+									);
 										$where = array('id_projek' => $this->input->post('id_projek'));
 										$_image = $this->db->get_where('projek',$where)->row();
 										$query = $this->db->update('projek',$data,$where);
@@ -417,11 +425,12 @@ class Ringkasan extends CI_Controller
 											'username'=>$this->input->post('id'),
 											'judul'=>$this->input->post('judul'),
 											'judul_seo'=>$this->mylibrary->seo_title($this->input->post('judul')),
-											'youtube'=>$this->input->post('youtube'),
-											'deskripsi'=>$this->input->post('deskripsi'),
-											'meta_deskripsi'=>$this->input->post('meta_deskripsi'),
+											// 'youtube'=>$this->input->post('youtube'),
+											// 'deskripsi'=>$this->input->post('deskripsi'),
+											// 'meta_deskripsi'=>$this->input->post('meta_deskripsi'),
 											'foto3'=>$hasil3['file_name'],
-											'keyword'=>$this->input->post('keyword'));
+											// 'keyword'=>$this->input->post('keyword')
+										);
 											$where = array('id_projek' => $this->input->post('id_projek'));
 											$_image = $this->db->get_where('projek',$where)->row();
 											$query = $this->db->update('projek',$data,$where);
@@ -433,11 +442,12 @@ class Ringkasan extends CI_Controller
 												'username'=>$this->input->post('id'),
 												'judul'=>$this->input->post('judul'),
 												'judul_seo'=>$this->mylibrary->seo_title($this->input->post('judul')),
-												'youtube'=>$this->input->post('youtube'),
-												'deskripsi'=>$this->input->post('deskripsi'),
-												'meta_deskripsi'=>$this->input->post('meta_deskripsi'),
+												// 'youtube'=>$this->input->post('youtube'),
+												// 'deskripsi'=>$this->input->post('deskripsi'),
+												// 'meta_deskripsi'=>$this->input->post('meta_deskripsi'),
 												'foto4'=>$hasil4['file_name'],
-												'keyword'=>$this->input->post('keyword'));
+												// 'keyword'=>$this->input->post('keyword')
+											);
 												$where = array('id_projek' => $this->input->post('id_projek'));
 												$_image = $this->db->get_where('projek',$where)->row();
 												$query = $this->db->update('projek',$data,$where);
@@ -449,11 +459,12 @@ class Ringkasan extends CI_Controller
 													'username'=>$this->input->post('id'),
 													'judul'=>$this->input->post('judul'),
 													'judul_seo'=>$this->mylibrary->seo_title($this->input->post('judul')),
-													'youtube'=>$this->input->post('youtube'),
-													'deskripsi'=>$this->input->post('deskripsi'),
-													'meta_deskripsi'=>$this->input->post('meta_deskripsi'),
+													// 'youtube'=>$this->input->post('youtube'),
+													// 'deskripsi'=>$this->input->post('deskripsi'),
+													// 'meta_deskripsi'=>$this->input->post('meta_deskripsi'),
 													'foto5'=>$hasil5['file_name'],
-													'keyword'=>$this->input->post('keyword'));
+													// 'keyword'=>$this->input->post('keyword')
+												);
 													$where = array('id_projek' => $this->input->post('id_projek'));
 													$_image = $this->db->get_where('projek',$where)->row();
 													$query = $this->db->update('projek',$data,$where);
@@ -465,12 +476,13 @@ class Ringkasan extends CI_Controller
 										'username'=>$this->input->post('id'),
 										'judul'=>$this->input->post('judul'),
 										'judul_seo'=>$this->mylibrary->seo_title($this->input->post('judul')),
-										'youtube'=>$this->input->post('youtube'),
-										'deskripsi'=>$this->input->post('deskripsi'),
-										'meta_deskripsi'=>$this->input->post('meta_deskripsi'),
+										// 'youtube'=>$this->input->post('youtube'),
+										// 'deskripsi'=>$this->input->post('deskripsi'),
+										// 'meta_deskripsi'=>$this->input->post('meta_deskripsi'),
 										'foto1'=>$hasil['file_name'],
 										'foto2'=>$hasil2['file_name'],
-										'keyword'=>$this->input->post('keyword'));
+										// 'keyword'=>$this->input->post('keyword')
+									);
 										$where = array('id_projek' => $this->input->post('id_projek'));
 										$_image = $this->db->get_where('projek',$where)->row();
 										$query = $this->db->update('projek',$data,$where);
@@ -484,13 +496,14 @@ class Ringkasan extends CI_Controller
 									'username'=>$this->input->post('id'),
 									'judul'=>$this->input->post('judul'),
 									'judul_seo'=>$this->mylibrary->seo_title($this->input->post('judul')),
-									'youtube'=>$this->input->post('youtube'),
-									'deskripsi'=>$this->input->post('deskripsi'),
-									'meta_deskripsi'=>$this->input->post('meta_deskripsi'),
+									// 'youtube'=>$this->input->post('youtube'),
+									// 'deskripsi'=>$this->input->post('deskripsi'),
+									// 'meta_deskripsi'=>$this->input->post('meta_deskripsi'),
 									'foto3'=>$hasil3['file_name'],
 									'foto4'=>$hasil4['file_name'],
 									'foto5'=>$hasil5['file_name'],
-									'keyword'=>$this->input->post('keyword'));
+									// 'keyword'=>$this->input->post('keyword')
+								);
 									$where = array('id_projek' => $this->input->post('id_projek'));
 									$_image = $this->db->get_where('projek',$where)->row();
 									$query = $this->db->update('projek',$data,$where);
@@ -505,12 +518,13 @@ class Ringkasan extends CI_Controller
 									'username'=>$this->input->post('id'),
 									'judul'=>$this->input->post('judul'),
 									'judul_seo'=>$this->mylibrary->seo_title($this->input->post('judul')),
-									'youtube'=>$this->input->post('youtube'),
-									'deskripsi'=>$this->input->post('deskripsi'),
-									'meta_deskripsi'=>$this->input->post('meta_deskripsi'),
+									// 'youtube'=>$this->input->post('youtube'),
+									// 'deskripsi'=>$this->input->post('deskripsi'),
+									// 'meta_deskripsi'=>$this->input->post('meta_deskripsi'),
 									'foto4'=>$hasil4['file_name'],
 									'foto5'=>$hasil5['file_name'],
-									'keyword'=>$this->input->post('keyword'));
+									// 'keyword'=>$this->input->post('keyword')
+								);
 									$where = array('id_projek' => $this->input->post('id_projek'));
 									$_image = $this->db->get_where('projek',$where)->row();
 									$query = $this->db->update('projek',$data,$where);
@@ -523,15 +537,16 @@ class Ringkasan extends CI_Controller
 									'username'=>$this->input->post('id'),
 									'judul'=>$this->input->post('judul'),
 									'judul_seo'=>$this->mylibrary->seo_title($this->input->post('judul')),
-									'youtube'=>$this->input->post('youtube'),
-									'deskripsi'=>$this->input->post('deskripsi'),
-									'meta_deskripsi'=>$this->input->post('meta_deskripsi'),
+									// 'youtube'=>$this->input->post('youtube'),
+									// 'deskripsi'=>$this->input->post('deskripsi'),
+									// 'meta_deskripsi'=>$this->input->post('meta_deskripsi'),
 									'foto1'=>$hasil['file_name'],
 									'foto2'=>$hasil2['file_name'],
 									'foto3'=>$hasil3['file_name'],
 									'foto4'=>$hasil4['file_name'],
 									'foto5'=>$hasil5['file_name'],
-									'keyword'=>$this->input->post('keyword'));
+									// 'keyword'=>$this->input->post('keyword')
+								);
 									$where = array('id_projek' => $this->input->post('id_projek'));
 									$_image = $this->db->get_where('projek',$where)->row();
 									$query = $this->db->update('projek',$data,$where);
@@ -779,5 +794,42 @@ class Ringkasan extends CI_Controller
 			redirect('ringkasan');
 	}
 
+	public function utama()
+	{
+	  if ($this->agent->is_browser())
+		  {
+				$agent = 'Desktop ' .$this->agent->browser().' '.$this->agent->version();
+		  }
+		  elseif ($this->agent->is_robot())
+		  {
+				$agent = $this->agent->robot();
+		  }
+		  elseif ($this->agent->is_mobile())
+		  {
+				$agent = 'Mobile' .$this->agent->mobile().''.$this->agent->version();
+		  }
+		  else
+		  {
+				$agent = 'Unidentified User Agent';
+		  }
+	  if ($this->session->level=='1' || $this->session->level=='4'){
+		cek_session_akses_level_1_and_4($this->session->id_session);
+		$data = array('id_projek'=>$this->uri->segment(3));
+		$where = array('username' => $this->session->username);
+		$this->db->update('user_bisnis', $data, $where);
+		$data_history_addcompany = array (
+		  'log_activity_user_id'=>$this->session->id_user,
+		  'log_activity_modul' => 'projek/informasi',
+		  'log_activity_status' => 'Update ID Projek '.$this->uri->segment(3),
+		  'log_activity_platform'=> $agent,
+		  'log_activity_ip'=> $this->input->ip_address()
+		);
+		$this->db->insert('log_activity', $data_history_addcompany);
+		} else{
+  
+		}
+  
+		redirect('ringkasan');
+	}
 
 }
