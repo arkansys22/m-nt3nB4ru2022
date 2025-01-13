@@ -118,7 +118,7 @@
 																				$activeClass = ($i == 1) ? 'active' : '';
 																				echo '
 																				<div class="swiper-slide ' . $activeClass . '" data-val="' . ($i - 1) . '">
-																					<img class="img-responsive img-full" src="' . base_url('assets/frontend/projek/' . $foto) . '" alt="Foto ' . $i . '" style="max-width: 100%; max-height: 400px;">
+																					<img class="img-responsive img-full" src="' . base_url('assets/frontend/projek/' . $foto) . '" alt="Foto ' . $i . '" style="width: 100%; height: 100%; object-fit: cover;">
 																				</div>
 																				';
 																			}
