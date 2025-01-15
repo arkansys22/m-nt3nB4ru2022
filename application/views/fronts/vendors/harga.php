@@ -52,14 +52,14 @@
 
                           <div class="tour-layer delay-1"></div>
                           <div class="hotel-desc">
-                            <span class="color-dark-2-light"><a href="<?php echo base_url("vendors/$user_bisnis->namabisnis_seo ") ?>"><strong><span><?php echo $user_bisnis->namabisnis?></span></strong></a></span>
+                            <span class="color-dark-2-light"><a href="<?php echo base_url("vendors/$user_bisnis->namabisnis_seo ") ?>"><span><strong><?php echo $user_bisnis->namabisnis?></span></strong></a></span>
                             <p><?php echo $company->user_company_judul?></p>
                             <p><?php echo $user_bisnis->views?> Dilihat</p>
 
                           </div>
                         </div>
                           <!-- <div class="contact-line"><p><i class="fa fa-map-marker"></i><a href="#"> <?php echo $kecamatan->nama_kec?> - <?php echo $kabupaten->nama?></p></a></div>
-                          <div class="contact-line"><p><strong>Media Sosial</strong></p></div>
+                          <div class="contact-line"><p>Media Sosial</p></div>
                           <div class="contact-line">
                             <a target="_blank" href="https://api.whatsapp.com/send?phone=+62<?php echo $user_bisnis->nomerbisnis?>&text=Halo,%20Saya%20menemukan%20<?php echo $user_bisnis->namabisnis?>%20di%20Mantenbaru.%20Bisa%20bantu%20saya?" class="button-s-2 bg-4 m-right"><i class="fa fa-whatsapp"> WA</i></a>
                             <?php if(empty($user_bisnis->fb)) { ?>
@@ -85,13 +85,13 @@
                             <center><a href="https://api.whatsapp.com/send?phone=+62<?php echo $user_bisnis->nomerbisnis?>&text=Halo,%20Saya%20menemukan%20<?php echo $user_bisnis->namabisnis?>%20di%20Mantenbaru.%20Saya%20mau%20tanya%20harga%20dulu." class="c-button small bg-dr-blue-2 hv-dr-blue-2-o"><i class="fa fa-question-circle"> Cek Detail Harga</i></a></center>
                           </div> -->
                           <hr>
-                          <div class="contact-line"><p><strong>Tentang <?php echo $user_bisnis->namabisnis?></strong></p></div>
+                          <div class="contact-line"><p><strong>Tentang <?php echo $user_bisnis->namabisnis?></p></strong></div>
                           <div class="contact-line"><p><?php echo $user_bisnis->tentangbisnis?></p></div>
-                          <div class="contact-line"><p><strong>Alamat</strong></p></div>
+                          <div class="contact-line"><p><strong>Alamat</p></strong></div>
                           <div class="contact-line"><p><?php echo $user_bisnis->alamat?></p></div>
                           <hr>
                           <div class="share clearfix">
-                            <div class="contact-line"><p><strong>Bagikan :</strong></p></div>
+                            <div class="contact-line"><p><strong>Bagikan :</p></strong></div>
                                                   <p></p><li class="color-fb"><a href="http://www.facebook.com/sharer.php?u=<?php echo base_url("harga-detail/$post_h->judul_seo ") ?>" onclick="window.open('http://www.facebook.com/sharer.php?u=<?php echo base_url("harga-detail/$post_h->judul_seo ")?>','newwindow','width=400,height=350');  return false;" title="Facebook" target="_blank" ><i class="fa fa-facebook" ></i>Facebook</a></li>
                                                   <?php
                                                   if(empty($post_h->harga_diskon)) { ?>
@@ -141,9 +141,9 @@
                                                                 </div>
                                                                 <div class="blog-list-text "><?php echo $post_h->deskripsi?></div>
                                                                 <?php if(empty($post_h->harga_diskon)) { ?>
-                                                                                <?php echo $post_h->harga_spec?><h5 class="blog-list-title"> Rp<?php echo number_format($post_h->harga,0,',','.')?></h5>
+                                                                                <?php echo $post_h->harga_spec?><h5 class="blog-list-title"> <strong>Rp<?php echo number_format($post_h->harga,0,',','.')?></strong></h5>
                                                                                 <?php }else if($a = $post_h->harga - $post_h->harga_diskon ){?>
-                                                                                  <?php echo $post_h->harga_spec?> <p font-size="1px"><s>Rp<?php echo number_format($post_h->harga,0,',','.')?></s></p> <h5 class="blog-list-title"> Rp<?php echo number_format($a,0,',','.')?></h5>
+                                                                                  <?php echo $post_h->harga_spec?> <p font-size="1px"><s>Rp<?php echo number_format($post_h->harga,0,',','.')?></s></p> <h5 class="blog-list-title"> <strong>Rp<?php echo number_format($a,0,',','.')?></strong></h5>
 
 
                                                                             <?php }?>
@@ -155,7 +155,7 @@
                                       </div>
                                       <!-- <div class="share clearfix">
                                           <br><br>
-                                                <div class="contact-line"><p><strong>Bagikan :</strong></p></div>
+                                                <div class="contact-line"><p>Bagikan :</p></div>
                                                                       <p></p><li class="color-fb"><a href="http://www.facebook.com/sharer.php?u=<?php echo base_url("harga-detail/$post_h->judul_seo ") ?>" onclick="window.open('http://www.facebook.com/sharer.php?u=<?php echo base_url("harga-detail/$post_h->judul_seo ")?>','newwindow','width=400,height=350');  return false;" title="Facebook" target="_blank" ><i class="fa fa-facebook" ></i>Facebook</a></li>
                                                                       <?php
                                                                       if(empty($post_h->harga_diskon)) { ?>
@@ -199,14 +199,14 @@
                                       </div>
                                       <div class="title">
                                           <span class="f-16 color-dark-2">
-                                            <span font-size="20px"> <strong><?php echo $post['judul'] ?></strong></span>
+                                            <span font-size="20px"> <?php echo $post['judul'] ?></span>
                                             <br>
                                             <?php
                                             if(empty($post['harga_diskon'])) { ?>
-                                            Rp<?php echo number_format($post['harga'],0,',','.')?>
+                                            <strong>Rp<?php echo number_format($post['harga'],0,',','.')?></strong>
                                           <?php }else if($a = $post['harga'] - $post['harga_diskon'] ){?>
-                                              <span font-size="20px" style="color:grey"><del>Rp<?php echo number_format($post['harga'],0,',','.')?></del></span>
-                                                Rp<?php echo number_format($a,0,',','.')?>
+                                              <span font-size="20px" style="color:grey"><del style="font-size: 11px;">Rp<?php echo number_format($post['harga'],0,',','.')?></del></span>
+                                                <strong>Rp<?php echo number_format($a,0,',','.')?></strong>
                                             <?php }?>
                                           </span>
                                           <br>
@@ -247,14 +247,14 @@
                                       </div>
                                       <div class="title">
                                           <span class="f-16 color-dark-2">
-                                            <span font-size="20px"> <strong><?php echo $post['judul'] ?></strong></span>
+                                            <span font-size="20px"> <?php echo $post['judul'] ?></span>
                                             <br>
                                             <?php
                                             if(empty($post['harga_diskon'])) { ?>
-                                            Rp<?php echo number_format($post['harga'],0,',','.')?>
+                                            <strong>Rp<?php echo number_format($post['harga'],0,',','.')?></strong>
                                           <?php }else if($a = $post['harga'] - $post['harga_diskon'] ){?>
-                                              <span font-size="20px" style="color:grey"><del>Rp<?php echo number_format($post['harga'],0,',','.')?></del></span>
-                                                Rp<?php echo number_format($a,0,',','.')?>
+                                              <span font-size="20px" style="color:grey"><del style="font-size: 11px;">Rp<?php echo number_format($post['harga'],0,',','.')?></del></span>
+                                                <strong>Rp<?php echo number_format($a,0,',','.')?></strong>
                                             <?php }?>
                                           </span>
                                           <br>
@@ -296,14 +296,14 @@
                                       </div>
                                       <div class="title">
                                           <span class="f-16 color-dark-2">
-                                            <span font-size="20px"> <strong><?php echo $post->judul ?></strong></span>
+                                            <span font-size="20px"> <?php echo $post->judul ?></span>
                                             <br>
                                             <?php
                                             if(empty($post->harga_diskon)) { ?>
-                                            Rp<?php echo number_format($post->harga,0,',','.')?>
+                                            <strong>Rp<?php echo number_format($post->harga,0,',','.')?></strong>
                                           <?php }else if($a = $post->harga - $post->harga_diskon ){?>
-                                              <span font-size="20px" style="color:grey"><del>Rp<?php echo number_format($post->harga,0,',','.')?></del></span>
-                                                Rp<?php echo number_format($a,0,',','.')?>
+                                              <span font-size="20px" style="color:grey"><del style="font-size: 11px;">Rp<?php echo number_format($post->harga,0,',','.')?></del></span>
+                                                <strong>Rp<?php echo number_format($a,0,',','.')?></strong>
                                             <?php }?>
                                           </span>
                                           <br>
@@ -345,14 +345,14 @@
                                       </div>
                                       <div class="title">
                                           <span class="f-16 color-dark-2">
-                                            <span font-size="20px"> <strong><?php echo $post->judul ?></strong></span>
+                                            <span font-size="20px"> <?php echo $post->judul ?></span>
                                             <br>
                                             <?php
                                             if(empty($post->harga_diskon)) { ?>
-                                            Rp<?php echo number_format($post->harga,0,',','.')?>
+                                            <strong>Rp<?php echo number_format($post->harga,0,',','.')?></strong>
                                           <?php }else if($a = $post->harga - $post->harga_diskon ){?>
-                                              <span font-size="20px" style="color:grey"><del>Rp<?php echo number_format($post->harga,0,',','.')?></del></span>
-                                                Rp<?php echo number_format($a,0,',','.')?>
+                                              <span font-size="20px" style="color:grey"><del style="font-size: 11px;">Rp<?php echo number_format($post->harga,0,',','.')?></del></span>
+                                                <strong>Rp<?php echo number_format($a,0,',','.')?></strong>
                                             <?php }?>
                                           </span>
                                           <br>
@@ -394,14 +394,14 @@
                                       </div>
                                       <div class="title">
                                           <span class="f-16 color-dark-2">
-                                            <span font-size="20px"> <strong><?php echo $post->judul ?></strong></span>
+                                            <span font-size="20px"> <?php echo $post->judul ?></span>
                                             <br>
                                             <?php
                                             if(empty($post->harga_diskon)) { ?>
-                                            Rp<?php echo number_format($post->harga,0,',','.')?>
+                                            <strong>Rp<?php echo number_format($post->harga,0,',','.')?></strong>
                                           <?php }else if($a = $post->harga - $post->harga_diskon ){?>
-                                              <span font-size="20px" style="color:grey"><del>Rp<?php echo number_format($post->harga,0,',','.')?></del></span>
-                                                Rp<?php echo number_format($a,0,',','.')?>
+                                              <span font-size="20px" style="color:grey"><del style="font-size: 11px;">Rp<?php echo number_format($post->harga,0,',','.')?></del></span>
+                                                <strong>Rp<?php echo number_format($a,0,',','.')?></strong>
                                             <?php }?>
                                           </span>
                                           <br>
