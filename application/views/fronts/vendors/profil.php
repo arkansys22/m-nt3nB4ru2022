@@ -191,7 +191,7 @@
                                              <?php if(empty($post_h->harga_diskon)) { ?>
                                                                                      <div class="color-dark-2 link-green"><?php echo $post_h->harga_spec?> Rp<?php echo number_format($post_h->harga,0,',','.')?></div>
                                                                                      <?php }else if($a = $post_h->harga - $post_h->harga_diskon ){?>
-                                                                                       <div class="color-dark-2 link-green"><?php echo $post_h->harga_spec?> <p font-size="1px"><s>Rp<?php echo number_format($post_h->harga,0,',','.')?></s></p> <strong>Rp<?php echo number_format($a,0,',','.')?></strong></div>
+                                                                                       <div class="color-dark-2 link-green"><?php echo $post_h->harga_spec?> <p style="font-size: 11px;"><s>Rp<?php echo number_format($post_h->harga,0,',','.')?></s></p> <strong>Rp<?php echo number_format($a,0,',','.')?></strong></div>
 
 
                                                                                  <?php }?>
