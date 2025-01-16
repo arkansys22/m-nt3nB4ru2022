@@ -69,10 +69,10 @@
                           foreach ($user_hargas2 as $row){
                         ?>
                         <?php if(empty($row->harga_diskon)) { ?>
-                             <span class="color-dark-2 palce-txt"><strong> Rp<?php echo number_format($row->harga,0,',','.')?></span>
+                             <span class="color-dark-2 palce-txt" style="font-size: 16px;"><strong>Rp<?php echo number_format($row->harga,0,',','.')?></strong></span>
                           <?php }else if($a = $row->harga - $row->harga_diskon ){?>
-                              <span font-size="10px" style="color:grey"><del>Rp<?php echo number_format($row->harga,0,',','.')?></del></span> 
-                              <span class="color-dark-2 palce-txt"><strong> Rp<?php echo number_format($a,0,',','.')?></strong></span>
+                              <span style="font-size: 11px; color:grey;"><del>Rp<?php echo number_format($row->harga,0,',','.')?></del></span><br>
+                              <span class="color-dark-2 palce-txt" style="font-size: 16px;"><strong>Rp<?php echo number_format($a,0,',','.')?></strong></span>
                         <?php }?>
                       </p>
                       <?php } ?>
