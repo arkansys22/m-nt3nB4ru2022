@@ -150,7 +150,7 @@
 
                                                                 <a href="https://api.whatsapp.com/send?phone=62<?php echo $user_bisnis->nomerbisnis?>&text=Halo,%20<?php echo $user_bisnis->namabisnis?>%20di%20Mantenbaru.com.%20Saya%20ingin%20memilih%20<?php echo $post_h->judul?>.%20^_^" class="c-button small bg-dr-blue-2 hv-dr-blue-2-o" style="margin-bottom: 5px;"><span>Pilih Yang Ini !</span></a>
                                                                 <a href="https://api.whatsapp.com/send?phone=+62<?php echo $user_bisnis->nomerbisnis?>&text=Halo,%20Saya%20menemukan%20<?php echo $user_bisnis->namabisnis?>%20di%20Mantenbaru.com.%20Saya%20ingin%20bertanya%20soal%20produk%20ini." class="c-button small bg-dr-blue-2 hv-dr-blue-2-o" style="margin-bottom: 5px;"><span>Tanya Admin</span></a>
-                                                                <a href="<?php echo base_url()?>vendors/<?php echo $user_bisnis->namabisnis_seo?>" class="c-button small bg-grey-2 hv-dr-blue-2-o"><span>Lihat Profile dan Harga</span></a>
+                                                                <a href="<?php echo base_url()?>vendors/<?php echo $user_bisnis->namabisnis_seo?>" class="c-button small bg-grey-2 hv-dr-blue-2-o" style="margin-bottom: 5px;"><span>Lihat Profile dan Harga</span></a>
                                                                 
     
                                                                 
@@ -176,7 +176,7 @@
     ?>
     
         <!-- Tombol WhatsApp dengan kelas yang sesuai -->
-        <a href="whatsapp://send?text=<?php echo urlencode($whatsapp_text); ?>" class="c-button small color-wa">
+        <a href="whatsapp://send?text=<?php echo urlencode($whatsapp_text); ?>" class="c-button small color-wa hv-dr-blue-2-o">
             <span>Bagikan Harga</span>
         </a>
     
