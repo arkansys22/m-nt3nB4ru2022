@@ -154,9 +154,11 @@
                                                                 
     
                                                                 
-    <?php
+                                                                <?php
     // Mendapatkan deskripsi
     $deskripsi = strip_tags($post_h->deskripsi); // Menghapus tag HTML jika ada
+    $deskripsi = html_entity_decode($deskripsi); // Mengubah entitas HTML menjadi karakter biasa
+    $deskripsi = str_replace("&nbsp;", " ", $deskripsi); // Mengganti &nbsp; dengan spasi biasa
 
     // Menghitung harga setelah diskon jika ada
     if(empty($post_h->harga_diskon)) {
@@ -179,6 +181,7 @@
         <a href="whatsapp://send?text=<?php echo urlencode($whatsapp_text); ?>" class="c-button small color-wa hv-dr-blue-2-o">
             <span>Bagikan Harga</span>
         </a>
+
     
 
 
