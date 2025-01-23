@@ -1428,6 +1428,14 @@ strong {
 	-moz-border-radius: 6px;
 	border-radius: 6px;
 }
+
+.c-button-wa.small {
+	font-size: 12px;
+	padding: 11px 18px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+
 .c-button.small2 {
 	font-size: 12px;
 	padding: 11px 18px;
@@ -12289,6 +12297,11 @@ footer {
 .color-ig {
 	background: #f56337;
 }
+
+.color-wa {
+	background: #25D366;
+}
+
 .color-yt {
 	background: #ff0000;
 }

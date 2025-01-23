@@ -95,13 +95,13 @@
                                                   <p></p><li class="color-fb"><a href="http://www.facebook.com/sharer.php?u=<?php echo base_url("harga-detail/$post_h->judul_seo ") ?>" onclick="window.open('http://www.facebook.com/sharer.php?u=<?php echo base_url("harga-detail/$post_h->judul_seo ")?>','newwindow','width=400,height=350');  return false;" title="Facebook" target="_blank" ><i class="fa fa-facebook" ></i>Facebook</a></li>
                                                   <?php
                                                   if(empty($post_h->harga_diskon)) { ?>
-                                                    <li class="color-ig">
+                                                    <li class="color-wa">
                                                       <a href="whatsapp://send?text=Stop keraguan Kamu ! Cari tau <?php echo $user_bisnis->namabisnis ?> yang ada di Mantenbaru.com. Ada <?php echo $post_h->judul ?> dengan harga <?php echo number_format($post_h->harga,0,',','.') ?>  hanya dengan mengklik <?php echo base_url("harga-detail/$post_h->judul_seo ") ?> keraguan kamu bisa terselesaikan. Pastikan tanggal acara kamu tidak keduluan yang lain.">
                                                         <i class="fa fa-whatsapp"></i>Whatsapp
                                                       </a>
                                                     </li>
                                                 <?php }else if($a = $post_h->harga - $post_h->harga_diskon ){?>
-                                                  <li class="color-ig">
+                                                  <li class="color-wa">
                                                     <a href="whatsapp://send?text=Stop keraguan Kamu ! Cari tau <?php echo $user_bisnis->namabisnis ?> yang ada di Mantenbaru.com. Ada <?php echo $post_h->judul ?> dengan harga ~Rp<?php echo number_format($post_h->harga,0,',','.') ?>~ Rp<?php echo number_format($a,0,',','.')?> hanya dengan mengklik <?php echo base_url("harga-detail/$post_h->judul_seo ") ?> keraguan kamu bisa terselesaikan. Dapatkan harga promo dan pastikan tanggal acara kamu tidak keduluan yang lain.">
                                                       <i class="fa fa-whatsapp"></i>Whatsapp
                                                     </a>
@@ -151,6 +151,40 @@
                                                                 <a href="https://api.whatsapp.com/send?phone=62<?php echo $user_bisnis->nomerbisnis?>&text=Halo,%20<?php echo $user_bisnis->namabisnis?>%20di%20Mantenbaru.com.%20Saya%20ingin%20memilih%20<?php echo $post_h->judul?>.%20^_^" class="c-button small bg-dr-blue-2 hv-dr-blue-2-o" style="margin-bottom: 5px;"><span>Pilih Yang Ini !</span></a>
                                                                 <a href="https://api.whatsapp.com/send?phone=+62<?php echo $user_bisnis->nomerbisnis?>&text=Halo,%20Saya%20menemukan%20<?php echo $user_bisnis->namabisnis?>%20di%20Mantenbaru.com.%20Saya%20ingin%20bertanya%20soal%20produk%20ini." class="c-button small bg-dr-blue-2 hv-dr-blue-2-o" style="margin-bottom: 5px;"><span>Tanya Admin</span></a>
                                                                 <a href="<?php echo base_url()?>vendors/<?php echo $user_bisnis->namabisnis_seo?>" class="c-button small bg-grey-2 hv-dr-blue-2-o"><span>Lihat Profile dan Harga</span></a>
+                                                                
+    
+                                                                
+    <?php
+    // Mendapatkan deskripsi
+    $deskripsi = strip_tags($post_h->deskripsi); // Menghapus tag HTML jika ada
+
+    // Menghitung harga setelah diskon jika ada
+    if(empty($post_h->harga_diskon)) {
+        $harga = number_format($post_h->harga, 0, ',', '.');
+        $harga_terformat = "Rp" . $harga;
+    } else {
+        $harga_asli = number_format($post_h->harga, 0, ',', '.');
+        $harga_diskon = $post_h->harga - $post_h->harga_diskon;
+        $harga_diskon_terformat = "Rp" . number_format($harga_diskon, 0, ',', '.');
+        $harga_terformat = "~Rp" . $harga_asli . "~ " . $harga_diskon_terformat;
+    }
+
+    // Menggabungkan deskripsi dan harga untuk teks WhatsApp
+    $whatsapp_text = "Stop keraguan Kamu! Cari tau " . $user_bisnis->namabisnis . " yang ada di Mantenbaru.com. Ada " . $post_h->judul . " dengan deskripsi: " . $deskripsi . ". Harga: " . $harga_terformat . " hanya dengan mengklik " . base_url("harga-detail/$post_h->judul_seo ") . " keraguan kamu bisa terselesaikan. Pastikan tanggal acara kamu tidak keduluan yang lain.";
+
+    // Menampilkan link WhatsApp dengan kelas dan gaya tombol yang sesuai
+    ?>
+    
+        <!-- Tombol WhatsApp dengan kelas yang sesuai -->
+        <a href="whatsapp://send?text=<?php echo urlencode($whatsapp_text); ?>" class="color-wa c-button small ">
+            <span>Bagikan Harga</span>
+        </a>
+    
+
+
+
+
+
                                                               </div>
                                       </div>
                                       <!-- <div class="share clearfix">
