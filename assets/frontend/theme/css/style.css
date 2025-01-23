@@ -1619,6 +1619,11 @@ strong {
 	border: 2px solid #022c54;
 }
 
+.c-button.bg-wa {
+	color: #fff;
+	border: 2px solid #25D366;
+}
+
 .c-button.bg-tr-1 {
 	color: #fff;
 	border: 2px solid rgba(255, 255, 255, 0.33);

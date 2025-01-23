@@ -176,7 +176,7 @@
     ?>
     
         <!-- Tombol WhatsApp dengan kelas yang sesuai -->
-        <a href="whatsapp://send?text=<?php echo urlencode($whatsapp_text); ?>" class="color-wa c-button small ">
+        <a href="whatsapp://send?text=<?php echo urlencode($whatsapp_text); ?>" class="c-button small color-wa">
             <span>Bagikan Harga</span>
         </a>
     
