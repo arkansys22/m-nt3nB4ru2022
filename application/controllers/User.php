@@ -138,7 +138,7 @@ class User extends CI_Controller
           $this->load->view('fronts/user/v_register',$data);
         }
   }
-  public function datapengantinmoeslem(){
+  public function datapengantin(){
         $this->form_validation->set_rules('cpp_namaleng','','trim|required', array('trim' => '', 'required' => 'nama lengkap pengantin pria belum diisi'));
 
 
@@ -188,20 +188,20 @@ class User extends CI_Controller
                 }
                 $data['title'] = 'Sukses mendaftar';
                 $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
-                $this->load->view('fronts/user/v_datapengantinmoeslem',$data);
+                $this->load->view('fronts/user/v_datapengantin',$data);
 
                 }
             }
             else
             {
               $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
-              $this->load->view('fronts/user/v_datapengantinmoeslem',$data);
+              $this->load->view('fronts/user/v_datapengantin',$data);
             }
 
           } else{
           $data['title'] = 'Ops.. Masih ada yang kurang. Silahkan dicek kembali.';
           $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
-          $this->load->view('fronts/user/v_datapengantinmoeslem',$data);
+          $this->load->view('fronts/user/v_datapengantin',$data);
         }
   }
   public function sendemail($email,$saltid,$username){
