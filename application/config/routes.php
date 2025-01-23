@@ -6,7 +6,7 @@ $route['translate_uri_dashes'] = FALSE;
 
 $route['login'] = "User/login";
 $route['daftar'] = "User/register";
-$route['datamoeslem'] = "User/datapengantinmoeslem";
+$route['datapengantin'] = "User/datapengantin";
 $route['beranda'] = "aspanel/home";
 
 /* Controller Frontend - Pembuka*/
