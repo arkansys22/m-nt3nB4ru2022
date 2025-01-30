@@ -189,7 +189,7 @@
                                            <div class="tour-desc bg-white">
                                              <a href="<?php echo base_url("harga-detail/$post_h->judul_seo ") ?>" class="c-button bg-green hv-green-o delay-2 small"><span>Mau Ini</span></a>
                                              <?php if(empty($post_h->harga_diskon)) { ?>
-                                                                                     <div class="color-dark-2 link-green"><?php echo $post_h->harga_spec?> Rp<?php echo number_format($post_h->harga,0,',','.')?></div>
+                                                                                     <div class="color-dark-2 link-green"><?php echo $post_h->harga_spec?><strong> Rp<?php echo number_format($post_h->harga,0,',','.')?></strong></div>
                                                                                      <?php }else if($a = $post_h->harga - $post_h->harga_diskon ){?>
                                                                                        <div class="color-dark-2 link-green"><?php echo $post_h->harga_spec?> <p style="font-size: 11px;"><s>Rp<?php echo number_format($post_h->harga,0,',','.')?></s></p> <strong>Rp<?php echo number_format($a,0,',','.')?></strong></div>
 
