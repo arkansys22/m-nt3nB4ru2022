@@ -38,28 +38,20 @@
   						<div class="f-login-desc color-grey">Silahkan lengkapi data dibawah ini :</div>
   					</div>
         
-            <div class="container mt-5">
-            <p style="font-size:12px"><b>Pilih Salah Satu :</b> </p>
-            <!-- Radio Button 1 -->
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="options" id="option1" value="islam">
-              <label class="form-check-label" for="option1">
-              <p style="font-size:12px">Islam</p>
-              </label>
-            </div>
-  
-            <!-- Radio Button 2 -->
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="options" id="option2" value="lainnya">
-              <label class="form-check-label" for="option2">
-              <p style="font-size:12px">Lainnya</p>
-              </label>
-            </div>
-            </div>
-            <br>
+            
 
-  					<form class="f-login-form" id="form-data-islam">
+  					<form class="f-login-form" id="form-data" method="POST" action="<?php echo base_url('user/submit_data_pengantin'); ?>">
+            <p style="font-size:12px"><b>Pilih Salah Satu :</b> </p>
+            <div class="mb-3">
+            <label class="form-check-label me-3">
+                <input class="form-check-input" type="radio" name="agama" value="islam" required> Islam
+            </label>
+            <label class="form-check-label">
+                <input class="form-check-input" type="radio" name="agama" value="lain" required> Lainnya
+            </label>
+        </div>
             <!-- Data Pengantin Ibu Batas Awal -->
+            <div id="form-data-islam" style="display: none;">
             <div class="row" style="margin-bottom: 1px">
                 <div class="input-style-1 b-50 type-2 color-5">
                 <p style="font-size:12px"><b>Nama Lengkap Pengantin Wanita</b> </p>
@@ -301,22 +293,11 @@
                     <input name='customers_islam_pemcin' type="text" placeholder="Nama Pembawa Cincin Kawin" onkeyup="this.value = this.value.toLowerCase()"> 
                     <small style="font-size: 15px; color:grey; margin-bottom: -15px"><?php echo form_error('customers_islam_pemcin'); ?></small>
                   </div>
-              </div>         
+              </div>
+            </div>         
             <!-- Data Panitia Pernikahan Batas Akhir -->
-             
-            
-  						<div class="input-style-1 b-50 type-2 color-5">
-  						<span style="font-size: 12px; color:grey;">Dengan mengklik Daftar, Anda menyetujui <a href="#"><span style ="color:blue;">Syarat dan Ketentuan</span></a> Mantenbaru.</span>
-  						</div>
-              <br><br><br>
-  						<input name='submit' type="submit" class="login-btn c-button full b-60 bg-dr-blue-2 hv-dr-blue-2-o" value="SUBMIT">
-              <br><br><br>
-              <div class="input-style-1 b-50 type-2 color-5">
-  						<span style="font-size: 15px; color:grey;">Sudah punya akun Mantenbaru? Langsung <a href="<?php echo base_url()?>login"><span style ="color:blue;">Masuk</span></a> yuk!</span>
-  						</div>
-  					</form>
 
-            <form class="f-login-form" id="form-data-lainnya">
+            <div id="form-data-lainnya" style="display: none;">
             <!-- Data Pengantin Ibu Batas Awal -->
             <div class="row" style="margin-bottom: 1px">
                 <div class="input-style-1 b-50 type-2 color-5">
@@ -483,19 +464,20 @@
                     <small style="font-size: 15px; color:grey; margin-bottom: -15px"><?php echo form_error('customers_lain_doa'); ?></small>
                   </div>
               </div>
+            </div>
             <!-- Data Panitia Pernikahan Batas Akhir -->
-             
-            
   						<div class="input-style-1 b-50 type-2 color-5">
-  						<span style="font-size: 12px; color:grey;">Dengan mengklik Daftar, Anda menyetujui <a href="#"><span style ="color:blue;">Syarat dan Ketentuan</span></a> Mantenbaru.</span>
+  						<span id="setuju" style="font-size: 12px; color:grey;">Dengan mengklik Daftar, Anda menyetujui <a href="#"><span style ="color:blue;">Syarat dan Ketentuan</span></a> Mantenbaru.</span>
   						</div>
               <br><br><br>
-  						<input name='submit' type="submit" class="login-btn c-button full b-60 bg-dr-blue-2 hv-dr-blue-2-o" value="SUBMIT">
+  						<input name='submit' id="submit" type="submit" class="login-btn c-button full b-60 bg-dr-blue-2 hv-dr-blue-2-o" value="SUBMIT">
               <br><br><br>
               <div class="input-style-1 b-50 type-2 color-5">
   						<span style="font-size: 15px; color:grey;">Sudah punya akun Mantenbaru? Langsung <a href="<?php echo base_url()?>login"><span style ="color:blue;">Masuk</span></a> yuk!</span>
   						</div>
   					</form>
+
+
   				</div>
   			</div>
   		</div>
@@ -506,17 +488,22 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   <script>
       $(document).ready(function() {
-        $('input[name="options"]').change(function() {
+        $('input[name="agama"]').change(function() {
+          console.log($(this).val());
           if ($(this).val() === 'islam') {
             $('#form-data-islam').show();
             $('#form-data-lainnya').hide();
-          } else if ($(this).val() === 'lainnya') {
+          } else if ($(this).val() === 'lain') {
             $('#form-data-islam').hide();
             $('#form-data-lainnya').show();
           }
+          $('#setuju').show();
+          $('#submit').show();
         });
         $('#form-data-islam').hide(); // Hide form by default
         $('#form-data-lainnya').hide(); // Hide form by default
+        $('#setuju').hide();
+        $('#submit').hide();
       });
     </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
