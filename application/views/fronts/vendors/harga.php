@@ -172,13 +172,13 @@
     }
 
     // Menggabungkan deskripsi dan harga untuk teks WhatsApp
-    $whatsapp_text = "Stop keraguan Kamu! Cari tau " . $user_bisnis->namabisnis . " yang ada di Mantenbaru.com. Ada " . $post_h->judul . " dengan deskripsi: " . $deskripsi . ". Harga: " . $harga_terformat . " hanya dengan mengklik " . base_url("harga-detail/$post_h->judul_seo ") . " keraguan kamu bisa terselesaikan. Pastikan tanggal acara kamu tidak keduluan yang lain.";
+    $whatsapp_text = "Stop keraguan Kamu! Cari tau " . $user_bisnis->namabisnis . " yang ada di Mantenbaru.com. \n\n" . $post_h->judul . "\nDengan deskripsi: \n" . $deskripsi . "\n\nDengan Harga: " . $harga_terformat . "." ;
 
     // Menampilkan link WhatsApp dengan kelas dan gaya tombol yang sesuai
     ?>
     
         <!-- Tombol WhatsApp dengan kelas yang sesuai -->
-        <a href="whatsapp://send?text=<?php echo urlencode($whatsapp_text); ?>" class="c-button small color-wa hv-dr-blue-2-o">
+        <a href="https://api.whatsapp.com/send?text=<?php echo urlencode($whatsapp_text); ?>" class="c-button small color-wa hv-dr-blue-2-o">
             <span>Bagikan Harga</span>
         </a>
 
