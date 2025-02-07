@@ -309,4 +309,9 @@ class User extends CI_Controller
 
     redirect('user/success');
   }
+
+  public function success() {
+    $data['title'] = 'Data Pengantin Berhasil Disimpan';
+    $this->load->view('fronts/user/v_success', $data);
+  }
 }
