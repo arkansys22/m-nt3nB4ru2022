@@ -172,7 +172,7 @@
     }
 
     // Menggabungkan deskripsi dan harga untuk teks WhatsApp
-    $whatsapp_text = "Stop keraguan Kamu! Cari tau " . $user_bisnis->namabisnis . " yang ada di Mantenbaru.com. \n\n" . $post_h->judul . "\nDengan deskripsi: \n" . $deskripsi . "\n\nDengan Harga: " . $harga_terformat . "." ;
+    $whatsapp_text =  $deskripsi . "\n\nDengan Harga: " . $harga_terformat . "." ;
 
     // Menampilkan link WhatsApp dengan kelas dan gaya tombol yang sesuai
     ?>
