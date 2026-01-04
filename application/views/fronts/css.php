@@ -6,3 +6,4 @@
 <link rel="alternate" href="<?php echo base_url()?>" hreflang="id" />
 <link href='<?php echo base_url()?>' rel='canonical'/>
 <!-- Google Analytics -->
+  <script defer src="https://tracker.ragakustudio.com/public/ragie-tracker.js" data-domain="mantenbaru.com" data-key="mb_1001"></script>
