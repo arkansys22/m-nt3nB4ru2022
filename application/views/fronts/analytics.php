@@ -8,6 +8,8 @@
       gtag('config', '<?php echo $identitas->analytics?>');
     </script>
 
+    <script defer src="https://tracker.ragakustudio.com/public/ragie-tracker.js" data-domain="mantenbaru.com" data-key="mb_1001"></script>
+
     <!-- Facebook Pixel Code -->
     <script>
     !function(f,b,e,v,n,t,s)
