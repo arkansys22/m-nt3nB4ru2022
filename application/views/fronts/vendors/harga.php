@@ -105,11 +105,14 @@
                                                   <?php
                                                   if(empty($post_h->harga_diskon)) { ?>
                                                     <li class="color-wa">
-                                                      <a data-ragie ="TRUE"
+                                                      <a 
+
+                                                      data-ragie ="TRUE"
                                                   data-ragie-label="Bagian WhatsApp <?php echo $post_h->judul?>"
                                                   data-ragie-target="WhatsApp <?php echo $post_h->judul?>"
                                                   data-ragie-location="Page <?php echo $post_h->judul?>"
                                                   data-ragie-entity="Detail <?php echo $post_h->judul?>"
+                                                      
                                                   href="whatsapp://send?text=Stop keraguan Kamu ! Cari tau <?php echo $user_bisnis->namabisnis ?> yang ada di Mantenbaru.com. Ada <?php echo $post_h->judul ?> dengan harga <?php echo number_format($post_h->harga,0,',','.') ?>  hanya dengan mengklik <?php echo base_url("harga-detail/$post_h->judul_seo ") ?> keraguan kamu bisa terselesaikan. Pastikan tanggal acara kamu tidak keduluan yang lain."
 
                                                   
