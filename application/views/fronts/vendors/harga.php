@@ -96,7 +96,7 @@
                                                   <a href="http://www.facebook.com/sharer.php?u=<?php echo base_url("harga-detail/$post_h->judul_seo ") ?>" onclick="window.open('http://www.facebook.com/sharer.php?u=<?php echo base_url("harga-detail/$post_h->judul_seo ")?>','newwindow','width=400,height=350');  return false;" title="Facebook" target="_blank" 
 
                                                   data-ragie ="TRUE"
-                                                  data-ragie-label="Bagian Facebook <?php echo $post_h->judul?>"
+                                                  data-ragie-label="Bagikan Facebook <?php echo $post_h->judul?>"
                                                   data-ragie-target="Facebook <?php echo $post_h->judul?>"
                                                   data-ragie-location="Page <?php echo $post_h->judul?>"
                                                   data-ragie-entity="Detail <?php echo $post_h->judul?>"
@@ -109,7 +109,7 @@
 
 
                                                   data-ragie ="TRUE"
-                                                  data-ragie-label="Bagian WhatsApp <?php echo $post_h->judul?>"
+                                                  data-ragie-label="Bagikan WhatsApp <?php echo $post_h->judul?>"
                                                   data-ragie-target="WhatsApp <?php echo $post_h->judul?>"
                                                   data-ragie-location="Page <?php echo $post_h->judul?>"
                                                   data-ragie-entity="Detail <?php echo $post_h->judul?>"
@@ -122,7 +122,7 @@
                                                     <a href="whatsapp://send?text=Stop keraguan Kamu ! Cari tau <?php echo $user_bisnis->namabisnis ?> yang ada di Mantenbaru.com. Ada <?php echo $post_h->judul ?> dengan harga ~Rp<?php echo number_format($post_h->harga,0,',','.') ?>~ Rp<?php echo number_format($a,0,',','.')?> hanya dengan mengklik <?php echo base_url("harga-detail/$post_h->judul_seo ") ?> keraguan kamu bisa terselesaikan. Dapatkan harga promo dan pastikan tanggal acara kamu tidak keduluan yang lain."
 
                                                   data-ragie ="TRUE"
-                                                  data-ragie-label="Bagian WhatsApp <?php echo $post_h->judul?>"
+                                                  data-ragie-label="Bagikan WhatsApp <?php echo $post_h->judul?>"
                                                   data-ragie-target="WhatsApp <?php echo $post_h->judul?>"
                                                   data-ragie-location="Page <?php echo $post_h->judul?>"
                                                   data-ragie-entity="Detail <?php echo $post_h->judul?>"
@@ -187,7 +187,7 @@
                                                                 ><span>Tanya Admin</span></a>
                                                                 <a href="<?php echo base_url()?>vendors/<?php echo $user_bisnis->namabisnis_seo?>" class="c-button small bg-grey-2 hv-dr-blue-2-o" style="margin-bottom: 5px;"
                                                                 data-ragie
-                                                                data-ragie-label="LIHAT PROFIL DAN HARGA<?php echo $post_h->judul?>"
+                                                                data-ragie-label="LIHAT PROFIL DAN HARGA <?php echo $post_h->judul?>"
                                                                 data-ragie-target="PROFILE PAGE <?php echo $post_h->judul?>"
                                                                 data-ragie-location="DETAIL PAGE <?php echo $post_h->judul?>"
                                                                 data-ragie-entity="DETAIL <?php echo $post_h->judul?>"
