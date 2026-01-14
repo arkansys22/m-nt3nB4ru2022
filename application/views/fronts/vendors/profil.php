@@ -187,7 +187,18 @@
                                                                                ?>
                                            </div>
                                            <div class="tour-desc bg-white">
-                                             <a href="<?php echo base_url("harga-detail/$post_h->judul_seo ") ?>" class="c-button bg-green hv-green-o delay-2 small"><span>Mau Ini</span></a>
+                                             <a href="<?php echo base_url("harga-detail/$post_h->judul_seo ") ?>" class="c-button bg-green hv-green-o delay-2 small"
+
+
+
+                                                  data-ragie
+                                                  data-ragie-label="Mau Ini <?php echo $post_h->judul?>"
+                                                  data-ragie-target="Pilih <?php echo $post_h->judul?>"
+                                                  data-ragie-location="Page <?php echo $post_v->namabisnis?>"
+                                                  data-ragie-entity="Detail <?php echo $post_h->judul?>"
+
+
+                                             ><span>Mau Ini</span></a>
                                              <?php if(empty($post_h->harga_diskon)) { ?>
                                                                                      <div class="color-dark-2 link-green"><?php echo $post_h->harga_spec?><strong> Rp<?php echo number_format($post_h->harga,0,',','.')?></strong></div>
                                                                                      <?php }else if($a = $post_h->harga - $post_h->harga_diskon ){?>
