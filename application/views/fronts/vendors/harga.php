@@ -171,9 +171,27 @@
 
                                                                             <?php }?>
 
-                                                                <a href="https://api.whatsapp.com/send?phone=62<?php echo $user_bisnis->nomerbisnis?>&text=Halo,%20<?php echo $user_bisnis->namabisnis?>%20di%20Mantenbaru.com.%20Saya%20ingin%20memilih%20<?php echo $post_h->judul?>.%20^_^" class="c-button small bg-dr-blue-2 hv-dr-blue-2-o" style="margin-bottom: 5px;"><span>Pilih Yang Ini !</span></a>
-                                                                <a href="https://api.whatsapp.com/send?phone=+62<?php echo $user_bisnis->nomerbisnis?>&text=Halo,%20Saya%20menemukan%20<?php echo $user_bisnis->namabisnis?>%20di%20Mantenbaru.com.%20Saya%20ingin%20bertanya%20soal%20produk%20ini." class="c-button small bg-dr-blue-2 hv-dr-blue-2-o" style="margin-bottom: 5px;"><span>Tanya Admin</span></a>
-                                                                <a href="<?php echo base_url()?>vendors/<?php echo $user_bisnis->namabisnis_seo?>" class="c-button small bg-grey-2 hv-dr-blue-2-o" style="margin-bottom: 5px;"><span>Lihat Profile dan Harga</span></a>
+                                                                <a href="https://api.whatsapp.com/send?phone=62<?php echo $user_bisnis->nomerbisnis?>&text=Halo,%20<?php echo $user_bisnis->namabisnis?>%20di%20Mantenbaru.com.%20Saya%20ingin%20memilih%20<?php echo $post_h->judul?>.%20^_^" class="c-button small bg-dr-blue-2 hv-dr-blue-2-o" style="margin-bottom: 5px;"
+                                                                data-ragie
+                                                                data-ragie-label="PILIH YANG INI <?php echo $post_h->judul?>"
+                                                                data-ragie-target="PILIH <?php echo $post_h->judul?>"
+                                                                data-ragie-location="DETAIL PAGE <?php echo $post_h->judul?>"
+                                                                data-ragie-entity="DETAIL <?php echo $post_h->judul?>"
+                                                                ><span>Pilih Yang Ini !</span></a>
+                                                                <a href="https://api.whatsapp.com/send?phone=+62<?php echo $user_bisnis->nomerbisnis?>&text=Halo,%20Saya%20menemukan%20<?php echo $user_bisnis->namabisnis?>%20di%20Mantenbaru.com.%20Saya%20ingin%20bertanya%20soal%20produk%20ini." class="c-button small bg-dr-blue-2 hv-dr-blue-2-o" style="margin-bottom: 5px;"
+                                                                data-ragie
+                                                                data-ragie-label="TANYA ADMIN <?php echo $post_h->judul?>"
+                                                                data-ragie-target="TANYA BY WHATSAPP <?php echo $post_h->judul?>"
+                                                                data-ragie-location="DETAIL PAGE <?php echo $post_h->judul?>"
+                                                                data-ragie-entity="DETAIL <?php echo $post_h->judul?>"
+                                                                ><span>Tanya Admin</span></a>
+                                                                <a href="<?php echo base_url()?>vendors/<?php echo $user_bisnis->namabisnis_seo?>" class="c-button small bg-grey-2 hv-dr-blue-2-o" style="margin-bottom: 5px;"
+                                                                data-ragie
+                                                                data-ragie-label="LIHAT PROFIL DAN HARGA<?php echo $post_h->judul?>"
+                                                                data-ragie-target="PROFILE PAGE <?php echo $post_h->judul?>"
+                                                                data-ragie-location="DETAIL PAGE <?php echo $post_h->judul?>"
+                                                                data-ragie-entity="DETAIL <?php echo $post_h->judul?>"
+                                                                ><span>Lihat Profile dan Harga</span></a>
                                                                 
     
                                                                 
@@ -201,7 +219,16 @@
     ?>
     
         <!-- Tombol WhatsApp dengan kelas yang sesuai -->
-        <a href="https://api.whatsapp.com/send?text=<?php echo urlencode($whatsapp_text); ?>" class="c-button small color-wa hv-dr-blue-2-o">
+        <a href="https://api.whatsapp.com/send?text=<?php echo urlencode($whatsapp_text); ?>" class="c-button small color-wa hv-dr-blue-2-o"
+        data-ragie
+        data-ragie-label="BAGIKAN HARGA <?php echo $post_h->judul?>"
+        data-ragie-target="BAGIKAN HARGA KE WA <?php echo $post_h->judul?>"
+        data-ragie-location="DETAIL PAGE <?php echo $post_h->judul?>"
+        data-ragie-entity="BAGIKAN HARGA <?php echo $post_h->judul?>"
+
+
+
+        >
             <span>Bagikan Harga</span>
         </a>
 
