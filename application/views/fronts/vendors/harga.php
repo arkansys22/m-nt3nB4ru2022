@@ -105,15 +105,15 @@
                                                   <?php
                                                   if(empty($post_h->harga_diskon)) { ?>
                                                     <li class="color-wa">
-                                                      <a href="whatsapp://send?text=Stop keraguan Kamu ! Cari tau <?php echo $user_bisnis->namabisnis ?> yang ada di Mantenbaru.com. Ada <?php echo $post_h->judul ?> dengan harga <?php echo number_format($post_h->harga,0,',','.') ?>  hanya dengan mengklik <?php echo base_url("harga-detail/$post_h->judul_seo ") ?> keraguan kamu bisa terselesaikan. Pastikan tanggal acara kamu tidak keduluan yang lain."
-
-                                                  data-ragie
+                                                      <a data-ragie ="TRUE"
                                                   data-ragie-label="Bagian WhatsApp <?php echo $post_h->judul?>"
                                                   data-ragie-target="WhatsApp <?php echo $post_h->judul?>"
                                                   data-ragie-location="Page <?php echo $post_h->judul?>"
                                                   data-ragie-entity="Detail <?php echo $post_h->judul?>"
-                                                      >
-                                                        <i class="fa fa-whatsapp"></i>Whatsapp
+                                                  href="whatsapp://send?text=Stop keraguan Kamu ! Cari tau <?php echo $user_bisnis->namabisnis ?> yang ada di Mantenbaru.com. Ada <?php echo $post_h->judul ?> dengan harga <?php echo number_format($post_h->harga,0,',','.') ?>  hanya dengan mengklik <?php echo base_url("harga-detail/$post_h->judul_seo ") ?> keraguan kamu bisa terselesaikan. Pastikan tanggal acara kamu tidak keduluan yang lain."
+
+                                                  
+                                                      ><i class="fa fa-whatsapp"></i>Whatsapp
                                                       </a>
                                                     </li>
                                                 <?php }else if($a = $post_h->harga - $post_h->harga_diskon ){?>
