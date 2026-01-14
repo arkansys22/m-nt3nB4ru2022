@@ -192,10 +192,10 @@
 
 
                                                   data-ragie
-                                                  data-ragie-label="Mau Ini <?php echo $post_h->judul?>"
-                                                  data-ragie-target="Pilih <?php echo $post_h->judul?>"
-                                                  data-ragie-location="Page <?php echo $post_v->namabisnis?>"
-                                                  data-ragie-entity="Detail <?php echo $post_h->judul?>"
+                                                  data-ragie-label="MAU INI <?php echo $post_h->judul?>"
+                                                  data-ragie-target="PILIH <?php echo $post_h->judul?>"
+                                                  data-ragie-location="PROFILE PAGE <?php echo $post_v->namabisnis?>"
+                                                  data-ragie-entity="DETAIL <?php echo $post_h->judul?>"
 
 
                                              ><span>Mau Ini</span></a>
