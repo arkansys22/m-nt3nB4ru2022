@@ -51,7 +51,11 @@
                           <h3><?php echo $post->user_company_judul?></h3>
                          </div>
                          <div class="vertical-bottom">
-                           <a href="<?php echo base_url()?>vendors/kategori/<?php echo $post->user_company_judul_seo?>" class="c-button bg-aqua hv-aqua-o b-40"><span>Pilih <?php echo $post->user_company_judul?></span></a>
+                           <a href="<?php echo base_url()?>vendors/kategori/<?php echo $post->user_company_judul_seo?>" class="c-button bg-aqua hv-aqua-o b-40" data-ragie
+  data-ragie-label="Kategori <?php echo $post->user_company_judul?>"
+  data-ragie-target="Pilihan <?php echo $post->user_company_judul?>"
+  data-ragie-location="Page Home"
+  data-ragie-entity="Kategori Vendor"><span>Pilih <?php echo $post->user_company_judul?></span></a>
                          </div>
                          </div>
                       </div>
