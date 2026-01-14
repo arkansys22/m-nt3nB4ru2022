@@ -92,9 +92,10 @@
                           <hr>
                           <div class="share clearfix">
                             <div class="contact-line"><p><strong>Bagikan :</p></strong></div>
-                                                  <p></p><li class="color-fb"><a href="http://www.facebook.com/sharer.php?u=<?php echo base_url("harga-detail/$post_h->judul_seo ") ?>" onclick="window.open('http://www.facebook.com/sharer.php?u=<?php echo base_url("harga-detail/$post_h->judul_seo ")?>','newwindow','width=400,height=350');  return false;" title="Facebook" target="_blank" 
+                                                  <p></p><li class="color-fb">
+                                                  <a href="http://www.facebook.com/sharer.php?u=<?php echo base_url("harga-detail/$post_h->judul_seo ") ?>" onclick="window.open('http://www.facebook.com/sharer.php?u=<?php echo base_url("harga-detail/$post_h->judul_seo ")?>','newwindow','width=400,height=350');  return false;" title="Facebook" target="_blank" 
 
-                                                  data-ragie
+                                                  data-ragie ="TRUE"
                                                   data-ragie-label="Bagian Facebook <?php echo $post_h->judul?>"
                                                   data-ragie-target="Facebook <?php echo $post_h->judul?>"
                                                   data-ragie-location="Page <?php echo $post_h->judul?>"
