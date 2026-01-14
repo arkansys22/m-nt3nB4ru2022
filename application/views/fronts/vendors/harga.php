@@ -92,11 +92,26 @@
                           <hr>
                           <div class="share clearfix">
                             <div class="contact-line"><p><strong>Bagikan :</p></strong></div>
-                                                  <p></p><li class="color-fb"><a href="http://www.facebook.com/sharer.php?u=<?php echo base_url("harga-detail/$post_h->judul_seo ") ?>" onclick="window.open('http://www.facebook.com/sharer.php?u=<?php echo base_url("harga-detail/$post_h->judul_seo ")?>','newwindow','width=400,height=350');  return false;" title="Facebook" target="_blank" ><i class="fa fa-facebook" ></i>Facebook</a></li>
+                                                  <p></p><li class="color-fb"><a href="http://www.facebook.com/sharer.php?u=<?php echo base_url("harga-detail/$post_h->judul_seo ") ?>" onclick="window.open('http://www.facebook.com/sharer.php?u=<?php echo base_url("harga-detail/$post_h->judul_seo ")?>','newwindow','width=400,height=350');  return false;" title="Facebook" target="_blank" 
+
+                                                  data-ragie
+                                                  data-ragie-label="Bagian Facebook <?php echo $post_h->judul?>"
+                                                  data-ragie-target="Facebook <?php echo $post_h->judul?>"
+                                                  data-ragie-location="Page <?php echo $post_h->judul?>"
+                                                  data-ragie-entity="Detail <?php echo $post_h->judul?>"
+
+                                                  ><i class="fa fa-facebook" ></i>Facebook</a></li>
                                                   <?php
                                                   if(empty($post_h->harga_diskon)) { ?>
                                                     <li class="color-wa">
-                                                      <a href="whatsapp://send?text=Stop keraguan Kamu ! Cari tau <?php echo $user_bisnis->namabisnis ?> yang ada di Mantenbaru.com. Ada <?php echo $post_h->judul ?> dengan harga <?php echo number_format($post_h->harga,0,',','.') ?>  hanya dengan mengklik <?php echo base_url("harga-detail/$post_h->judul_seo ") ?> keraguan kamu bisa terselesaikan. Pastikan tanggal acara kamu tidak keduluan yang lain.">
+                                                      <a href="whatsapp://send?text=Stop keraguan Kamu ! Cari tau <?php echo $user_bisnis->namabisnis ?> yang ada di Mantenbaru.com. Ada <?php echo $post_h->judul ?> dengan harga <?php echo number_format($post_h->harga,0,',','.') ?>  hanya dengan mengklik <?php echo base_url("harga-detail/$post_h->judul_seo ") ?> keraguan kamu bisa terselesaikan. Pastikan tanggal acara kamu tidak keduluan yang lain."
+
+                                                  data-ragie
+                                                  data-ragie-label="Bagian WhatsApp <?php echo $post_h->judul?>"
+                                                  data-ragie-target="WhatsApp <?php echo $post_h->judul?>"
+                                                  data-ragie-location="Page <?php echo $post_h->judul?>"
+                                                  data-ragie-entity="Detail <?php echo $post_h->judul?>"
+                                                      >
                                                         <i class="fa fa-whatsapp"></i>Whatsapp
                                                       </a>
                                                     </li>
