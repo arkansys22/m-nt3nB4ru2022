@@ -57,11 +57,19 @@
                 <span style="font-size: 15px; color:grey;"><?php echo form_error('username'); ?><br></span>
   						</div>
                   <br><br><br>
-  						<div class="input-style-1 b-50 type-2 color-5">
-  							<input type="password" name='password' placeholder="password">
+  						<div class="input-style-1 b-50 type-2 color-5" style="position:relative;">
+                <input type="password" id="password" name="password" placeholder="password">
 
-                <span style="font-size: 15px; color:grey;"><?php echo form_error('password'); ?><br></span>
-  						</div>
+                <!-- tombol show/hide -->
+                <span onclick="togglePassword()" id="eyeIcon"
+                      style="position:absolute; right:15px; top:50%; transform:translateY(-50%); cursor:pointer;">
+                  👁️
+                </span>
+
+                <span style="font-size: 15px; color:grey;">
+                  <?php echo form_error('password'); ?><br>
+                </span>
+              </div>
                 <br><br><br>
   						<input name='submit' type="submit" class="login-btn c-button full b-60 bg-dr-blue-2 hv-dr-blue-2-o" value="Masuk">
                 <br><br><br>
@@ -76,6 +84,21 @@
   	<div class="full-copy">© 2022 All rights reserved. <a href="<?php echo base_url()?>">Mantenbaru</a></div>
   </div>
   <?php $this->load->view('fronts/js')?>
+
+  <script>
+    function togglePassword() {
+      const passwordInput = document.getElementById("password");
+      const eyeIcon = document.getElementById("eyeIcon");
+
+      if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+        eyeIcon.innerHTML = "🙈";
+      } else {
+        passwordInput.type = "password";
+        eyeIcon.innerHTML = "👁️";
+      }
+    }
+    </script>
 
   </body>
 </html>
