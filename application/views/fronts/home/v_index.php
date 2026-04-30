@@ -201,14 +201,27 @@
                             </div>
 
                             <div class="hargas">
-                                <?php
-                                if(empty($post->harga_diskon)) { ?>
-                                <span class="f-16"><strong>Rp<?php echo number_format($post->harga,0,',','.')?></strong></span>
-                                <?php }else if($a = $post->harga - $post->harga_diskon ){?>
-                                  <span class="f-11" font-size="20px" style="color:grey"><del>Rp<?php echo number_format($post->harga,0,',','.')?></del></span>
-                                  <br>  
-                                  <span class ="f-16"><strong>Rp<?php echo number_format($a,0,',','.')?></strong>
-                                <?php }?>
+                            <?php
+                            $harga = (int)$post->harga;
+                            $diskon = (int)$post->harga_diskon;
+
+                            if($diskon > 0){
+                                $harga_final = $harga - $diskon;
+                            ?>
+                                <span class="f-11" style="color:grey">
+                                    <del>Rp<?= number_format($harga,0,',','.') ?></del>
+                                </span><br>
+                                <span class="f-16">
+                                    <strong>Rp<?= number_format($harga_final,0,',','.') ?></strong>
+                                </span>
+
+                            <?php } else { ?>
+
+                                <span class="f-16">
+                                    <strong>Rp<?= number_format($harga,0,',','.') ?></strong>
+                                </span>
+
+                            <?php } ?>
                             </div>
                         </div>
                        
