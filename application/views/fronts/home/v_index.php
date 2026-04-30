@@ -238,10 +238,6 @@
 							<div class="swiper-arrow-right arrows-travel"><span class="fa fa-angle-right"></span></div>
 					</div>
 				  </div>
-           <div class="hidden-lg col-xs-12"> 
-                  <a class ="c-button small2 bg-dr-blue-2 hv-dr-blue-2-o " href="<?php echo base_url()?>vendors/kategori/gedung"><span>Lihat semua Gedung</span></a>
-                
-          </div> 
     		</div>
       
           
