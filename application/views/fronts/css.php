@@ -15,14 +15,12 @@
     width: 100%;
     aspect-ratio: 4/5; /* rekomendasi: 1080x1350 */
     overflow: hidden;
-    border-radius: 10px;
 }
 
 .img-gedung {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block;
 }
 
 .img-gedung {
@@ -38,6 +36,7 @@
 .card-gedung {
     display: flex;
     flex-direction: column;
+    width: 100%;
     height: 100%;
 }
 
@@ -88,6 +87,17 @@
 
 .hargas {
     margin-top: auto;
+}
+
+
+.swiper-wrapper {
+    display: flex;
+    align-items: stretch !important;
+}
+
+.swiper-slide {
+    height: auto !important;
+    display: flex;
 }
 
 </style>
