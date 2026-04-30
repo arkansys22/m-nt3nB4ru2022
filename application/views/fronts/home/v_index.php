@@ -1290,6 +1290,7 @@
         </div>
       </div>
     </div>
+    <br><br>
 	</div>
 
   <?php $this->load->view('fronts/footer')?>
