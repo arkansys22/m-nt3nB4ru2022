@@ -829,7 +829,7 @@
 
                             <div class="cta-content">
                               <div class="cta-icon">
-                                <i class="fa fa-female"></i>
+                                <i class="fa fa-leaf"></i>
                               </div>
 
                               <h4>Lihat Semua Dekorasi</h4>
