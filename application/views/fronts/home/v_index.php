@@ -169,7 +169,7 @@
              
 
                 ?>
-                <div class="swiper-slide2">
+                <div class="swiper-slide">
                     <div class="card-gedung">
 
                         <!-- GAMBAR -->
