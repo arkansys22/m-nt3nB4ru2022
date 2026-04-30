@@ -170,7 +170,7 @@
 
                 ?>
                 <div class="swiper-slide">
-                    <div class="hotel-item card-gedung">
+                    <div class="hotel-item">
                        <div class="radius-tops">
                          <a href="<?php echo base_url("harga-detail/$post->judul_seo") ?>">
                          <?php 
@@ -193,14 +193,13 @@
                             </div>
                         <?php }?>
                        </div>
-                       <div class="titles">
-                          <div class="infos">
-                              <span class="f-16 nama-bisnis"><?= $post->namabisnis ?></span>
-                              <span class="f-11 lokasi"><?= $post->user_company_judul ?> <?= $post->nama ?></span>
-                          </div>
-
-                          <div class="hargas">
-                              <?php
+                       <div class="title clearfix">
+                         <span class="f-16" font-size="40px"><?php echo $post->namabisnis?></span>
+                         <br>
+                          <span class="f-11 color-dark-2">
+                            <?php echo $post->user_company_judul?> <?php echo $post->nama?>
+                            <br>
+                            <?php
                             if(empty($post->harga_diskon)) { ?>
                             <span class="f-16"><strong>Rp<?php echo number_format($post->harga,0,',','.')?></strong></span>
                             <?php }else if($a = $post->harga - $post->harga_diskon ){?>
@@ -208,8 +207,10 @@
                               <br>  
                               <span class ="f-16"><strong>Rp<?php echo number_format($a,0,',','.')?></strong>
                             <?php }?>
-                          </div>
-                        </div>
+                          </span>
+                          <!-- <br> -->
+                        <!-- <span class="f-11 color-dark-2"><?php echo $post->user_company_judul?> <?php echo $post->nama?></span> -->
+                       </div>
                     </div>
                   </div>
                 <?php } ?>
@@ -271,7 +272,7 @@
 
                 ?>
                 <div class="swiper-slide">
-                    <div class="hotel-item card-gedung">
+                    <div class="hotel-item">
                        <div class="radius-top">
                          <a href="<?php echo base_url("harga-detail/$post->judul_seo") ?>">
                          <img <?php if(empty($post->foto_h)) {echo "<img src='".base_url()."assets/frontend/campur/noimage_paket.jpg'>";}
@@ -290,15 +291,13 @@
                             </div>
                         <?php }?>
                        </div>
-
-                        <div class="titles">
-                          <div class="infos">
-                              <span class="f-16 nama-bisnis"><?= $post->namabisnis ?></span>
-                              <span class="f-11 lokasi"><?= $post->user_company_judul ?> <?= $post->nama ?></span>
-                          </div>
-
-                          <div class="hargas">
-                              <?php
+                       <div class="title clearfix">
+                       <span class="f-16" font-size="40px"><?php echo $post->namabisnis?></span>
+                         <br>
+                          <span class="f-11 color-dark-2">
+                            <?php echo $post->user_company_judul?> <?php echo $post->nama?>
+                            <br>
+                            <?php
                             if(empty($post->harga_diskon)) { ?>
                             <span class="f-16"><strong>Rp<?php echo number_format($post->harga,0,',','.')?></strong></span>
                             <?php }else if($a = $post->harga - $post->harga_diskon ){?>
@@ -306,8 +305,10 @@
                               <br>  
                               <span class ="f-16"><strong>Rp<?php echo number_format($a,0,',','.')?></strong>
                             <?php }?>
-                          </div>
-                        </div>
+                          </span>
+                          <!-- <br> -->
+                        <!-- <span class="f-11 color-dark-2"><?php echo $post->user_company_judul?> <?php echo $post->nama?></span> -->
+                       </div>
                     </div>
                   </div>
                 <?php } ?>
