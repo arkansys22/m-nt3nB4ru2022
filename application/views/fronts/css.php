@@ -122,7 +122,7 @@
     min-height: 100%;
     border-radius: 12px;
 
-    background: linear-gradient(135deg, #9333ea, #1e3a8a);
+    background: linear-gradient(135deg, #f44a97, #ed126b);
     color: #fff;
 
     text-align: center;
