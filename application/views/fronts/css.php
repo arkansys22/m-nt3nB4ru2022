@@ -173,7 +173,7 @@
 .cta-button {
     display: inline-block;
     background: #fff;
-    color: #1e3a8a;
+    color: #ed126b;
     font-size: 12px;
     font-weight: 600;
     padding: 8px 14px;
