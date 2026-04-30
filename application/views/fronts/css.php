@@ -8,6 +8,9 @@
 <!-- Google Analytics -->
   <script defer src="https://tracker.ragakustudio.com/public/ragie-tracker.js" data-domain="mantenbaru.com" data-key="mb_1001"></script>
 
+
+<style> 
+
 .radius-top {
     width: 100%;
     aspect-ratio: 4/5; /* rekomendasi: 1080x1350 */
@@ -21,3 +24,5 @@
     object-fit: cover;
     display: block;
 }
+
+</style>

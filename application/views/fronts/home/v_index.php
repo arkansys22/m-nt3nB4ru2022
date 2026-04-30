@@ -22,6 +22,7 @@
     <link rel="shortcut icon" href="<?php echo base_url()?>assets/frontend/campur/<?=$identitas->favicon ?>" type="image/x-icon">    
     <?php $this->load->view('fronts/css')?>
     <?php $this->load->view('fronts/analytics')?>
+    
   </head>
   <body data-color="theme-1">
     <?php $this->load->view('fronts/loader')?>
