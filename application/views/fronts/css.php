@@ -76,17 +76,17 @@
 }
 
 
-.title {
+.titles {
     display: flex;
     flex-direction: column;
     height: 100%;
 }
 
-.info {
+.infos {
     flex-grow: 1;
 }
 
-.harga {
+.hargas {
     margin-top: auto;
 }
 

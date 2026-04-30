@@ -292,13 +292,13 @@
                         <?php }?>
                        </div>
 
-                        <div class="title">
-                          <div class="info">
+                        <div class="titles">
+                          <div class="infos">
                               <span class="f-16 nama-bisnis"><?= $post->namabisnis ?></span>
                               <span class="f-11 lokasi"><?= $post->user_company_judul ?> <?= $post->nama ?></span>
                           </div>
 
-                          <div class="harga">
+                          <div class="hargas">
                               <?php
                             if(empty($post->harga_diskon)) { ?>
                             <span class="f-16"><strong>Rp<?php echo number_format($post->harga,0,',','.')?></strong></span>
