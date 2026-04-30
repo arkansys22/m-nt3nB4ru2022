@@ -257,7 +257,7 @@
                               </div>
 
                               <h4>Lihat Semua Gedung</h4>
-                              <p>Temukan lebih banyak pilihan gedung terbaik untuk acara Anda</p>
+                              <p>Temukan lebih banyak pilihan Gedung terbaik untuk acara Anda</p>
 
                               <a href="<?php echo base_url()?>vendors/kategori/gedung" 
                                  class="cta-button">
@@ -401,7 +401,7 @@
                               </div>
 
                               <h4>Lihat Semua Dokumentasi</h4>
-                              <p>Temukan lebih banyak pilihan gedung terbaik untuk acara Anda</p>
+                              <p>Temukan lebih banyak pilihan Dokumentasi terbaik untuk acara Anda</p>
 
                               <a href="<?php echo base_url()?>vendors/kategori/dokumentasi" 
                                  class="cta-button">
