@@ -238,35 +238,26 @@
     z-index: 10;
 }
 
+
 /* WRAPPER */
 .swiper-wrapper-container {
     position: relative;
 }
 
-
-.swiper-arrow-left {
-    background: linear-gradient(to right, rgba(255,255,255,0.9), transparent);
-    left: -10px; /* bisa 0 atau 10px sesuai selera */
-}
-
-.swiper-arrow-right {
-    background: linear-gradient(to left, rgba(255,255,255,0.9), transparent);
-    right: -10px;
-}
-
+/* ARROW BASE */
 .arrows-travel {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
 
-    width: 48px;
-    height: 48px;
+    width: 44px;
+    height: 44px;
 
-    background: rgba(255,255,255,0.9);
-    backdrop-filter: blur(6px);
+    background: rgba(255,255,255,0.85);
+    backdrop-filter: blur(8px);
 
-    border-radius: 50%;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    border-radius: 12px; /* bukan bulat, lebih modern */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
 
     display: flex;
     align-items: center;
@@ -275,28 +266,39 @@
     cursor: pointer;
     z-index: 20;
 
-    transition: all 0.25s ease;
+     opacity: 0;
 
-    opacity: 0;
+    transition: all 0.25s ease;
 }
 
+/* POSISI */
+.swiper-arrow-left {
+    left: -5px;
+}
+
+.swiper-arrow-right {
+    right: -5px;
+}
+
+/* ICON */
 .arrows-travel span {
-    font-size: 20px;
-    color: #333;
+    font-size: 18px;
+    color: #444;
     transition: 0.2s;
 }
 
-/* HOVER */
+/* HOVER (INI YANG BIKIN KERASA PREMIUM) */
 .arrows-travel:hover {
-    background: #2563eb;
-    transform: translateY(-50%) scale(1.1);
+    background: #ffffff;
+    transform: translateY(-50%) scale(1.08);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.18);
 }
 
 .arrows-travel:hover span {
-    color: #fff;
+    color: #e11d48; /* warna brand kamu */
 }
 
-/* ACTIVE (klik) */
+/* ACTIVE */
 .arrows-travel:active {
     transform: translateY(-50%) scale(0.95);
 }
@@ -314,11 +316,32 @@
     opacity: 1;
 }
 
+.swiper-wrapper-container::before,
+.swiper-wrapper-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 60px;
+    height: 100%;
+    z-index: 5;
+    pointer-events: none;
+}
+
+.swiper-wrapper-container::before {
+    left: 0;
+    background: linear-gradient(to right, #fff, transparent);
+}
+
+.swiper-wrapper-container::after {
+    right: 0;
+    background: linear-gradient(to left, #fff, transparent);
+}
+
 @media (max-width: 768px) {
     .arrows-travel {
         opacity: 1 !important;
-        width: 38px;
-        height: 38px;
+        width: 36px;
+        height: 36px;
     }
 }
 
