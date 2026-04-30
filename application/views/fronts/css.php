@@ -85,30 +85,8 @@
     flex-grow: 1;
 }
 
-/* batasi judul */
-.nama-bisniss {
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    font-size: 14px;
-}
-
-/* batasi lokasi */
-.lokasis {
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    font-size: 12px;
-}
-
 .hargas {
     margin-top: auto;
-}
-
-.hotel-item {
-    height: 100%;
 }
 
 
