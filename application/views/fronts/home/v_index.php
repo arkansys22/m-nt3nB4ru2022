@@ -163,13 +163,13 @@
     		<div class="row">
     			   <div class="arrows">
     				<div class="swiper-container hotel-slider" data-speed="1000" data-center="0" data-slides-per-view="responsive" data-mob-slides="1" data-xs-slides="2" data-sm-slides="2" data-md-slides="3" data-lg-slides="5" data-add-slides="5" >
-						  <div class="swiper-wrappers">
+						  <div class="swiper-wrapper">
                 <?php
                       foreach ($post_gedung as $post) {
              
 
                 ?>
-                <div class="swiper-slides">
+                <div class="swiper-slide">
                     <div class="hotel-item">
                        <div class="radius-tops">
                          <a href="<?php echo base_url("harga-detail/$post->judul_seo") ?>">
@@ -193,8 +193,6 @@
                             </div>
                         <?php }?>
                        </div>
-
-                       
                        <div class="title clearfix">
                          <span class="f-16" font-size="40px"><?php echo $post->namabisnis?></span>
                          <br>
