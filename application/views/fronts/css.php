@@ -244,6 +244,30 @@
 }
 
 
+/* FIX ICON AGAR BENAR-BENAR CENTER */
+.swiper-arrow-left span,
+.swiper-arrow-right span {
+    display: flex;              /* ini WAJIB */
+    align-items: center;        /* vertical center */
+    justify-content: center;    /* horizontal center */
+
+    width: 100%;
+    height: 100%;
+
+    font-size: 18px;
+    line-height: 1;             /* hilangkan efek turun */
+    margin: 0;
+    padding: 0;
+}
+
+
+.swiper-arrow-left span:before,
+.swiper-arrow-right span:before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .swiper-arrow-left {
     background: linear-gradient(to right, rgba(255,255,255,0.9), transparent);
     left: -10px; /* bisa 0 atau 10px sesuai selera */
