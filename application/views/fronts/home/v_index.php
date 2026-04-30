@@ -170,7 +170,7 @@
 
                 ?>
                 <div class="swiper-slide">
-                    <div class="hotel-item">
+                    <div class="hotel-item card-gedung">
                        <div class="radius-tops">
                          <a href="<?php echo base_url("harga-detail/$post->judul_seo") ?>">
                          <?php 
