@@ -544,8 +544,8 @@
                                 <i class="fa fa-cutlery"></i>
                               </div>
 
-                              <h4>Lihat Semua Dokumentasi</h4>
-                              <p>Temukan lebih banyak pilihan gedung terbaik untuk acara Anda</p>
+                              <h4>Lihat Semua Catering</h4>
+                              <p>Temukan lebih banyak pilihan Catering terbaik untuk acara Anda</p>
 
                               <a href="<?php echo base_url()?>vendors/kategori/catering" 
                                  class="cta-button">
@@ -578,7 +578,7 @@
         <div class="row hidden-xs hidden-md hidden-sm">       
                 <div class="col-md-6">
                   <div class="second-title">
-                    <h2>Hair & Makeup</h2>
+                    <h2>MUA & Attire</h2>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -590,7 +590,7 @@
         <div class="row hidden-lg">       
                 <div class="col-md-6">
                   <div class="second-title">
-                    <h2>Hair & Makeup</h2>
+                    <h2>MUA & Attire</h2>
                     </div>
                 </div>                          
         </div>
@@ -689,7 +689,7 @@
                               </div>
 
                               <h4>Lihat Semua MUA & Attire</h4>
-                              <p>Temukan lebih banyak pilihan gedung terbaik untuk acara Anda</p>
+                              <p>Temukan lebih banyak pilihan MUA & Attire terbaik untuk acara Anda</p>
 
                               <a href="<?php echo base_url()?>vendors/kategori/mua" 
                                  class="cta-button">
@@ -722,7 +722,7 @@
         <div class="row hidden-xs hidden-md hidden-sm">       
                 <div class="col-md-6">
                   <div class="second-title">
-                    <h2>Dekorasi & Tata Lampu</h2>
+                    <h2>Dekorasi</h2>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -734,7 +734,7 @@
         <div class="row hidden-lg">       
                 <div class="col-md-6">
                   <div class="second-title">
-                    <h2>Dekorasi & Tata Lampu</h2>
+                    <h2>Dekorasi</h2>
                     </div>
                 </div>                          
         </div>
@@ -832,8 +832,8 @@
                                 <i class="fa fa-female"></i>
                               </div>
 
-                              <h4>Lihat Semua Gaun & Busana</h4>
-                              <p>Temukan lebih banyak pilihan gedung terbaik untuk acara Anda</p>
+                              <h4>Lihat Semua Dekorasi</h4>
+                              <p>Temukan lebih banyak pilihan Dekorasi terbaik untuk acara Anda</p>
 
                               <a href="<?php echo base_url()?>vendors/kategori/dekorasi" 
                                  class="cta-button">
@@ -973,11 +973,11 @@
 
                             <div class="cta-content">
                               <div class="cta-icon">
-                                <i class="fa fa-female"></i>
+                                <i class="fa fa-headphones"></i>
                               </div>
 
                               <h4>Lihat Entertain</h4>
-                              <p>Temukan lebih banyak pilihan gedung terbaik untuk acara Anda</p>
+                              <p>Temukan lebih banyak pilihan Entertain terbaik untuk acara Anda</p>
 
                               <a href="<?php echo base_url()?>vendors/kategori/seni-musik" 
                                  class="cta-button">
@@ -1117,7 +1117,7 @@
 
                             <div class="cta-content">
                               <div class="cta-icon">
-                                <i class="fa fa-female"></i>
+                                <i class="fa fa-microphone"></i>
                               </div>
 
                               <h4>Lihat MC</h4>
