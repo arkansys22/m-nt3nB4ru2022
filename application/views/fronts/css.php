@@ -238,36 +238,52 @@
     z-index: 10;
 }
 
+/* WRAPPER */
+.swiper-wrapper-container {
+    position: relative;
+}
+
 
 .swiper-arrow-left {
+    background: linear-gradient(to right, rgba(255,255,255,0.9), transparent);
     left: -10px; /* bisa 0 atau 10px sesuai selera */
 }
 
 .swiper-arrow-right {
+    background: linear-gradient(to left, rgba(255,255,255,0.9), transparent);
     right: -10px;
 }
 
 .arrows-travel {
-    width: 42px;
-    height: 42px;
-    background: #ffffff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 48px;
+    height: 48px;
+
+    background: rgba(255,255,255,0.9);
+    backdrop-filter: blur(6px);
+
     border-radius: 50%;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
 
     display: flex;
     align-items: center;
     justify-content: center;
 
     cursor: pointer;
-    transition: all 0.3s ease;
+    z-index: 20;
+
+    transition: all 0.25s ease;
 
     opacity: 0;
 }
 
-/* ICON */
 .arrows-travel span {
-    font-size: 18px;
+    font-size: 20px;
     color: #333;
+    transition: 0.2s;
 }
 
 /* HOVER */
@@ -280,18 +296,30 @@
     color: #fff;
 }
 
+/* ACTIVE (klik) */
+.arrows-travel:active {
+    transform: translateY(-50%) scale(0.95);
+}
+
 .swiper-container {
-    padding: 0 20px;
+     padding: 0 30px;
+}
+
+
+.arrows:hover .arrows-travel {
+    opacity: 1;
+}
+
+.swiper-wrapper-container:hover .arrows-travel {
+    opacity: 1;
 }
 
 @media (max-width: 768px) {
     .arrows-travel {
         opacity: 1 !important;
+        width: 38px;
+        height: 38px;
     }
-}
-
-.arrows:hover .arrows-travel {
-    opacity: 1;
 }
 
 </style>
