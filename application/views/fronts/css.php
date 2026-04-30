@@ -107,7 +107,7 @@
     margin-top: auto;
 }
 
-.hotel-items {
+.hotel-item {
     height: 100%;
 }
 
