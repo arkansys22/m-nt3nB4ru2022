@@ -78,15 +78,16 @@
 .titles {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    justify-content: space-between; /* INI KUNCINYA */
+    height: 130px; /* atau 130px, sesuaikan */
 }
 
 .infos {
-    flex-grow: 1;
+    overflow: hidden;
 }
 
 .hargas {
-    margin-top: auto;
+    margin-top: 8px;
 }
 
 /* batasi judul */
