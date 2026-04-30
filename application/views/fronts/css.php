@@ -103,12 +103,12 @@
 }
 
 /* SWIPER FIX */
-.swiper-wrapper2 {
+.swiper-wrapper {
     display: flex;
     align-items: stretch !important;
 }
 
-.swiper-slide2 {
+.swiper-slide {
     height: auto !important;
     display: flex;
 }
