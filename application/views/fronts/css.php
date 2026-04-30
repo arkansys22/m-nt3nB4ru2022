@@ -225,4 +225,73 @@
     color: #fff;
 }
 
+
+.arrows {
+    position: relative;
+}
+
+.swiper-arrow-left,
+.swiper-arrow-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+
+.swiper-arrow-left {
+    left: -10px; /* bisa 0 atau 10px sesuai selera */
+}
+
+.swiper-arrow-right {
+    right: -10px;
+}
+
+.arrows-travel {
+    width: 42px;
+    height: 42px;
+    background: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    opacity: 0;
+}
+
+/* ICON */
+.arrows-travel span {
+    font-size: 18px;
+    color: #333;
+}
+
+/* HOVER */
+.arrows-travel:hover {
+    background: #2563eb;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.arrows-travel:hover span {
+    color: #fff;
+}
+
+.swiper-container {
+    padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+    .arrows-travel {
+        opacity: 1 !important;
+    }
+}
+
+.arrows:hover .arrows-travel {
+    opacity: 1;
+}
+
 </style>
