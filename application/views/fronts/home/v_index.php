@@ -22,7 +22,7 @@
     <link rel="shortcut icon" href="<?php echo base_url()?>assets/frontend/campur/<?=$identitas->favicon ?>" type="image/x-icon">    
     <?php $this->load->view('fronts/css')?>
     <?php $this->load->view('fronts/analytics')?>
-    
+
   </head>
   <body data-color="theme-1">
     <?php $this->load->view('fronts/loader')?>
@@ -171,7 +171,7 @@
                 ?>
                 <div class="swiper-slide">
                     <div class="hotel-item">
-                       <div class="radius-top">
+                       <div class="radius-tops">
                          <a href="<?php echo base_url("harga-detail/$post->judul_seo") ?>">
                          <?php 
                             $img = empty($post->foto_h) 

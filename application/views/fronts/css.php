@@ -11,7 +11,7 @@
 
 <style> 
 
-.radius-top {
+.radius-tops {
     width: 100%;
     aspect-ratio: 4/5; /* rekomendasi: 1080x1350 */
     overflow: hidden;
