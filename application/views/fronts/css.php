@@ -226,69 +226,15 @@
 }
 
 
+/* ===================== */
+/* SWIPER ARROW CLEAN UI */
+/* ===================== */
+
 .arrows {
     position: relative;
 }
 
-.swiper-arrow-left,
-.swiper-arrow-right {
-    width: 46px;
-    height: 46px;
-    background: #ed126b;
-    border-radius: 50%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    color: #fff;
-}
-
-/* WRAPPER */
-.swiper-wrapper-container {
-    position: relative;
-}
-
-.swiper-arrow-left:hover,
-.swiper-arrow-right:hover {
-    background: #c9065f;
-}
-
-
-/* FIX ICON AGAR BENAR-BENAR CENTER */
-.swiper-arrow-left span,
-.swiper-arrow-right span {
-    display: flex;              /* ini WAJIB */
-    align-items: center;        /* vertical center */
-    justify-content: center;    /* horizontal center */
-
-    width: 100%;
-    height: 100%;
-
-    font-size: 18px;
-    line-height: 1;             /* hilangkan efek turun */
-    margin: 0;
-    padding: 0;
-}
-
-
-.swiper-arrow-left span:before,
-.swiper-arrow-right span:before {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.swiper-arrow-left {
-    background: linear-gradient(to right, rgba(237,18,107,0.9), transparent);
-    left: -10px; /* bisa 0 atau 10px sesuai selera */
-}
-
-.swiper-arrow-right {
-    background: linear-gradient(to left, rgba(237,18,107,0.9), transparent);
-    right: -10px;
-}
-
+/* ARROW UTAMA */
 .arrows-travel {
     position: absolute;
     top: 50%;
@@ -297,63 +243,76 @@
     width: 48px;
     height: 48px;
 
-    background: rgba(255,255,255,0.9);
-    backdrop-filter: blur(6px);
-
     border-radius: 50%;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    background: #ed126b; /* warna brand */
 
     display: flex;
     align-items: center;
     justify-content: center;
 
     cursor: pointer;
-    z-index: 20;
+    z-index: 99;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 
     transition: all 0.25s ease;
-
     opacity: 0;
 }
 
+/* POSISI */
+.swiper-arrow-left {
+    left: -20px;
+}
+
+.swiper-arrow-right {
+    right: -20px;
+}
+
+/* ICON FIX CENTER */
 .arrows-travel span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+
     font-size: 20px;
-    color: #333;
-    transition: 0.2s;
+    color: #fff;
+
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+}
+
+/* FIX FONT AWESOME BIAR GA TURUN */
+.arrows-travel span::before {
+    display: block;
+    line-height: 1;
 }
 
 /* HOVER */
 .arrows-travel:hover {
-    background: #2563eb;
+    background: #c9065f;
     transform: translateY(-50%) scale(1.1);
 }
 
-.arrows-travel:hover span {
-    color: #fff;
-}
-
-/* ACTIVE (klik) */
+/* ACTIVE */
 .arrows-travel:active {
     transform: translateY(-50%) scale(0.95);
 }
 
-.swiper-container {
-     padding: 0 30px;
-}
-
-
+/* MUNCUL SAAT HOVER */
 .arrows:hover .arrows-travel {
     opacity: 1;
 }
 
-.swiper-wrapper-container:hover .arrows-travel {
-    opacity: 1;
-}
-
+/* MOBILE */
 @media (max-width: 768px) {
     .arrows-travel {
         opacity: 1 !important;
-        width: 38px;
-        height: 38px;
+        width: 40px;
+        height: 40px;
     }
 }
 

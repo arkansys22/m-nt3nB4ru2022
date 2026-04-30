@@ -272,6 +272,7 @@
               <div class="swiper-arrow-left arrows-travel">
                   <span class="fa fa-angle-left"></span>
               </div>
+
               <div class="swiper-arrow-right arrows-travel">
                   <span class="fa fa-angle-right"></span>
               </div>
