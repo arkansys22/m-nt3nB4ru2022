@@ -269,12 +269,12 @@
 }
 
 .swiper-arrow-left {
-    background: linear-gradient(to right, rgba(255,255,255,0.9), transparent);
+    background: linear-gradient(to right, rgba(237,18,107,0.9), transparent);
     left: -10px; /* bisa 0 atau 10px sesuai selera */
 }
 
 .swiper-arrow-right {
-    background: linear-gradient(to left, rgba(255,255,255,0.9), transparent);
+    background: linear-gradient(to left, rgba(237,18,107,0.9), transparent);
     right: -10px;
 }
 
