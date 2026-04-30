@@ -22,6 +22,62 @@
   <link rel="shortcut icon" href="<?php echo base_url()?>assets/frontend/aspanel/img/fav.png" type="image/x-icon">
 
   <?php $this->load->view('fronts/css')?>
+
+  <style>
+    /* WRAPPER GAMBAR */
+    .img-wrap {
+        width: 100%;
+        aspect-ratio: 4 / 5; /* sama kayak card atas (biar konsisten) */
+        overflow: hidden;
+        border-radius: 10px;
+        background: #f3f3f3;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    /* GAMBAR */
+    .img-wrap img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* ini kunci utama */
+        transition: transform 0.3s ease;
+    }
+
+    /* HOVER EFFECT */
+    .hotel-sm-slide:hover img {
+        transform: scale(1.05);
+    }
+
+    /* JUDUL */
+    .judul-item {
+        margin-top: 10px;
+        font-size: 13px;
+        line-height: 1.4;
+        height: 40px; /* biar rata */
+        overflow: hidden;
+
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+
+    /* SWIPER FIX BIAR TINGGI SAMA */
+    .swiper-wrapper {
+        display: flex;
+        align-items: stretch !important;
+    }
+
+    .swiper-slide {
+        height: auto !important;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* BIAR CARD FULL HEIGHT */
+    .hotel-sm-slide {
+        display: flex;
+        flex-direction: column;
+    }
+  </style>
 </head>
   <body data-color="theme-1">
     <!-- <?php $this->load->view('fronts/loader')?>-->
@@ -98,13 +154,22 @@
                           foreach ($user_harga as $row){
                           ?>
                           <div class="swiper-slide hotel-sm-slide responsive">
-                            <?php if(empty($row['foto_h'])) { ?>
-                              <a href="<?php echo base_url() ?>harga-detail/<?=$row['judul_seo']?>"><img height="100%" width="100%" src="<?php echo base_url() ?>assets/frontend/noimage_paket.jpg" alt=""></a>
-                            <?php }else{ ?>
-                              <a href="<?php echo base_url() ?>harga-detail/<?=$row['judul_seo']?>"><img height="100%" width="100%" src="<?php echo base_url() ?>assets/frontend/harga/<?=$row['foto_h']?>" alt=""></a>
-                            <?php } ?>
-                                <p style="height: 100px; font-size:12px;"><a href="<?php echo base_url() ?>harga-detail/<?=$row['judul_seo']?>"><?=$row['judul']?></a></p>
 
+                            <div class="img-wrap">
+                              <a href="<?php echo base_url() ?>harga-detail/<?=$row['judul_seo']?>">
+                                <?php if(empty($row['foto_h'])) { ?>
+                                  <img src="<?php echo base_url() ?>assets/frontend/noimage_paket.jpg" alt="">
+                                <?php }else{ ?>
+                                  <img src="<?php echo base_url() ?>assets/frontend/harga/<?=$row['foto_h']?>" alt="">
+                                <?php } ?>
+                              </a>
+                            </div>
+
+                            <p class="judul-item">
+                              <a href="<?php echo base_url() ?>harga-detail/<?=$row['judul_seo']?>">
+                                <?=$row['judul']?>
+                              </a>
+                            </p>
 
                           </div>
                         <?php } ?>
