@@ -89,6 +89,24 @@
     margin-top: auto;
 }
 
+/* batasi judul */
+.nama-bisnis {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+/* batasi lokasi */
+.lokasi {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 12px;
+}
+
 
 .swiper-wrapper {
     display: flex;
