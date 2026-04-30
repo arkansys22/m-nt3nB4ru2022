@@ -232,15 +232,26 @@
 
 .swiper-arrow-left,
 .swiper-arrow-right {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
+    width: 46px;
+    height: 46px;
+    background: #ed126b;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #fff;
 }
 
 /* WRAPPER */
 .swiper-wrapper-container {
     position: relative;
+}
+
+.swiper-arrow-left:hover,
+.swiper-arrow-right:hover {
+    background: #c9065f;
 }
 
 
