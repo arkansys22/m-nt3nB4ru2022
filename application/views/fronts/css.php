@@ -118,4 +118,8 @@
     display: flex;
 }
 
+.hotel-item {
+    height: 100%;
+}
+
 </style>
