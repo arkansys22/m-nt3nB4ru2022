@@ -214,13 +214,22 @@
 
                 <!-- SLIDE TAMBAHAN -->
                 <div class="swiper-slide">
-                  <div class="hotel-item" style="background:#f5f5f5;text-align:center;padding:40px;">
-                    <h4>Lihat Semua Gedung</h4>
-                    <p>Temukan lebih banyak pilihan</p>
-                    <a href="<?php echo base_url()?>vendors/kategori/gedung" 
-                       class="c-button small bg-dr-blue-2 hv-dr-blue-2-o">
-                       Lihat Sekarang
-                    </a>
+                  <div class="card-cta">
+
+                    <div class="cta-content">
+                      <div class="cta-icon">
+                        <i class="fa fa-building"></i>
+                      </div>
+
+                      <h4>Lihat Semua Gedung</h4>
+                      <p>Temukan lebih banyak pilihan gedung terbaik untuk acara Anda</p>
+
+                      <a href="<?php echo base_url()?>vendors/kategori/gedung" 
+                         class="cta-button">
+                         Jelajahi Sekarang →
+                      </a>
+                    </div>
+
                   </div>
                 </div>
 						  </div>
