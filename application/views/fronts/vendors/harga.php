@@ -369,7 +369,7 @@
                             <div class="swiper-container hotel-slider" data-autoplay="5000" data-loop="1" data-speed="1000" data-center="0" data-slides-per-view="responsive" data-mob-slides="2" data-xs-slides="2" data-sm-slides="2" data-md-slides="2" data-lg-slides="2" data-add-slides="2">
                               <div class="swiper-wrapper">
                                 <?php
-                                $post_souvenir = $this->Crud_m->view_where_join_three_limit('harga','user_bisnis','user_company','kabupaten','id_harga','user_company_account','100',array('user_company_judul'=>'Souvenir'));
+                                $post_souvenir = $this->Crud_m->view_where_join_three_limit('harga','user_bisnis','user_company','kabupaten','id_harga','user_company_account','6',array('user_company_judul'=>'Souvenir'));
                                 foreach ($post_souvenir as $post) {
                                 ?>
                                 <div class="swiper-slide">
@@ -418,7 +418,7 @@
                             <div class="swiper-container hotel-slider" data-autoplay="5000" data-loop="1" data-speed="1000" data-center="0" data-slides-per-view="responsive" data-mob-slides="2" data-xs-slides="2" data-sm-slides="2" data-md-slides="2" data-lg-slides="2" data-add-slides="2">
                               <div class="swiper-wrapper">
                                 <?php
-                                $post_dokumen = $this->Crud_m->view_where_join_three_limit('harga','user_bisnis','user_company','kabupaten','id_harga','user_company_account','100',array('user_company_judul'=>'Dokumentasi'));
+                                $post_dokumen = $this->Crud_m->view_where_join_three_limit('harga','user_bisnis','user_company','kabupaten','id_harga','user_company_account','6',array('user_company_judul'=>'Dokumentasi'));
                                 foreach ($post_dokumen as $post) {
                                 ?>
                                 <div class="swiper-slide">
@@ -467,7 +467,7 @@
                             <div class="swiper-container hotel-slider" data-autoplay="5000" data-loop="1" data-speed="1000" data-center="0" data-slides-per-view="responsive" data-mob-slides="2" data-xs-slides="2" data-sm-slides="2" data-md-slides="2" data-lg-slides="2" data-add-slides="2">
                               <div class="swiper-wrapper">
                                 <?php
-                                $post_gedung = $this->Crud_m->view_where_join_three_limit('harga','user_bisnis','user_company','kabupaten','id_harga','user_company_account','100',array('user_company_judul'=>'Gedung'));
+                                $post_gedung = $this->Crud_m->view_where_join_three_limit('harga','user_bisnis','user_company','kabupaten','id_harga','user_company_account','6',array('user_company_judul'=>'Gedung'));
                                 foreach ($post_gedung as $post) {
                                 ?>
                                 <div class="swiper-slide">
