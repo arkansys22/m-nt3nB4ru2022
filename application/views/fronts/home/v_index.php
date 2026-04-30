@@ -172,9 +172,13 @@
                     <div class="hotel-item">
                        <div class="radius-top">
                          <a href="<?php echo base_url("harga-detail/$post->judul_seo") ?>">
-                         <img <?php if(empty($post->foto_h)) {echo "<img src='".base_url()."assets/frontend/campur/noimage_paket.jpg'>";}
-                                                 else { echo " <img src='".base_url()."assets/frontend/harga/".$post->foto_h."'> ";}
-                                                 ?>
+                         <?php 
+                            $img = empty($post->foto_h) 
+                                ? base_url("assets/frontend/campur/noimage_paket.jpg") 
+                                : base_url("assets/frontend/harga/".$post->foto_h);
+                            ?>
+
+                            <img src="<?= $img ?>" class="img-gedung">
                           </a>
 
                         <?php

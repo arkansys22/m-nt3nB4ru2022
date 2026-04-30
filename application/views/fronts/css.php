@@ -7,3 +7,17 @@
 <link href='<?php echo base_url()?>' rel='canonical'/>
 <!-- Google Analytics -->
   <script defer src="https://tracker.ragakustudio.com/public/ragie-tracker.js" data-domain="mantenbaru.com" data-key="mb_1001"></script>
+
+.radius-top {
+    width: 100%;
+    aspect-ratio: 4/5; /* rekomendasi: 1080x1350 */
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.img-gedung {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
