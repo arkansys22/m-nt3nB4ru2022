@@ -149,7 +149,7 @@
           			</div>
                 <div class="col-md-6">
           				<div class="third-title">
-                  <a href="<?php echo base_url()?>vendors/kategori/gedung"><h4>Lihat semua Gedung</h4></a>
+                  
           					</div>
           			</div>            
     		</div>
