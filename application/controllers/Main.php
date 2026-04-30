@@ -11,12 +11,11 @@ class Main extends CI_Controller {
 		$this->data['post_dokumen'] = $this->Crud_m->view_where_join_three_limit('harga', 'user_bisnis', 'user_company', 'kabupaten', 'id_harga', 'user_company_account', '6', array('user_company_judul' => 'Dokumentasi'), 'RAND()');
 		$this->data['post_catering'] = $this->Crud_m->view_where_join_three_limit('harga', 'user_bisnis', 'user_company', 'kabupaten', 'id_harga', 'user_company_account', '6', array('user_company_judul' => 'Catering'), 'RAND()');
 		$this->data['post_mua'] = $this->Crud_m->view_where_join_three_limit('harga', 'user_bisnis', 'user_company', 'kabupaten', 'id_harga', 'user_company_account', '6', array('user_company_judul' => 'MUA'), 'RAND()');
-		$this->data['post_gaun'] = $this->Crud_m->view_where_join_three_limit('harga', 'user_bisnis', 'user_company', 'kabupaten', 'id_harga', 'user_company_account', '6', array('user_company_judul' => 'MUA'), 'RAND()');
 		$this->data['post_dekorasi'] = $this->Crud_m->view_where_join_three_limit('harga', 'user_bisnis', 'user_company', 'kabupaten', 'id_harga', 'user_company_account', '6', array('user_company_judul' => 'Dekorasi'), 'RAND()');
 		$this->data['post_souvenir'] = $this->Crud_m->view_where_join_three_limit('harga', 'user_bisnis', 'user_company', 'kabupaten', 'id_harga', 'user_company_account', '6', array('user_company_judul' => 'Souvenir'), 'RAND()');
 		$this->data['post_entertain'] = $this->Crud_m->view_where_join_three_limit('harga', 'user_bisnis', 'user_company', 'kabupaten', 'id_harga', 'user_company_account', '6', array('user_company_judul' => 'Seni Musik'), 'RAND()');
 		$this->data['post_mc'] = $this->Crud_m->view_where_join_three_limit('harga', 'user_bisnis', 'user_company', 'kabupaten', 'id_harga', 'user_company_account', '6', array('user_company_judul' => 'MC'), 'RAND()');
-		$this->data['post_news'] = $this->Crud_m->view_join_three('harga', 'user_bisnis', 'user_company', 'kabupaten', 'id_harga', 'user_company_account', '6', 'RAND()');
+	
 
 		$this->load->view('fronts/home/v_index', $this->data);
 	}
