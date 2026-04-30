@@ -232,10 +232,29 @@
 
 .swiper-arrow-left,
 .swiper-arrow-right {
+    all: unset; /* RESET semua style lama (ini kunci utama) */
+
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 10;
+
+    width: 46px;
+    height: 46px;
+
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(10px);
+
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    z-index: 50;
+
+    transition: all 0.25s ease;
 }
 
 
@@ -273,11 +292,66 @@
 
 /* POSISI */
 .swiper-arrow-left {
-    left: -5px;
+    left: -10px;
 }
 
 .swiper-arrow-right {
-    right: -5px;
+    right: -10px;
+}
+
+
+.swiper-arrow-left span,
+.swiper-arrow-right span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 18px;
+    color: #333;
+
+    line-height: 1;
+}
+
+/* hover */
+.swiper-arrow-left:hover,
+.swiper-arrow-right:hover {
+    background: #fff;
+    transform: translateY(-50%) scale(1.08);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+/* warna hover */
+.swiper-arrow-left:hover span,
+.swiper-arrow-right:hover span {
+    color: #e11d48;
+}
+
+/* klik */
+.swiper-arrow-left:active,
+.swiper-arrow-right:active {
+    transform: translateY(-50%) scale(0.95);
+}
+
+/* munculin saat hover container */
+.arrows:hover .swiper-arrow-left,
+.arrows:hover .swiper-arrow-right {
+    opacity: 1;
+}
+
+/* default hidden */
+.swiper-arrow-left,
+.swiper-arrow-right {
+    opacity: 0;
+}
+
+/* mobile tetap muncul */
+@media (max-width: 768px) {
+    .swiper-arrow-left,
+    .swiper-arrow-right {
+        opacity: 1;
+        width: 36px;
+        height: 36px;
+    }
 }
 
 /* ICON */
