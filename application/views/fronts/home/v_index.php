@@ -170,63 +170,46 @@
 
                 ?>
                 <div class="swiper-slide">
-                    <div class="hotel-item">
-                       <div class="radius-tops">
-                         <a href="<?php echo base_url("harga-detail/$post->judul_seo") ?>">
-                         <?php 
-                            $img = empty($post->foto_h) 
-                                ? base_url("assets/frontend/campur/noimage_paket.jpg") 
-                                : base_url("assets/frontend/harga/".$post->foto_h);
-                            ?>
+                    <div class="card-gedung">
 
-                            <img src="<?= $img ?>" class="img-gedung">
-                          </a>
-
-                        <?php
-                        $b=$post->harga_diskon;
-                        $c=$post->harga;
-                        if(empty($post->harga_diskon)) { ?>
-
-                        <?php }else if($a = ($b/$c)*100 ){?>
-                          <div class="price price-s-1">
-                            <?php echo number_format($a,0,',','.')?>%
-                            </div>
-                        <?php }?>
-                       </div>
-
-                        <div class="titles">
-                            <div class="infos">
-                                <span class="nama-bisnis"><?= $post->namabisnis ?></span>
-                                <span class="lokasi"><?= $post->user_company_judul ?> <?= $post->nama ?></span>
-                            </div>
-
-                            <div class="hargas">
-                            <?php
-                            $harga = (int)$post->harga;
-                            $diskon = (int)$post->harga_diskon;
-
-                            if($diskon > 0){
-                                $harga_final = $harga - $diskon;
-                            ?>
-                                <span class="f-11" style="color:grey">
-                                    <del>Rp<?= number_format($harga,0,',','.') ?></del>
-                                </span><br>
-                                <span class="f-16">
-                                    <strong>Rp<?= number_format($harga_final,0,',','.') ?></strong>
-                                </span>
-
-                            <?php } else { ?>
-
-                                <span class="f-16">
-                                    <strong>Rp<?= number_format($harga,0,',','.') ?></strong>
-                                </span>
-
-                            <?php } ?>
-                            </div>
+                        <!-- GAMBAR -->
+                        <div class="card-img">
+                            <a href="<?= base_url("harga-detail/$post->judul_seo") ?>">
+                                <?php 
+                                $img = empty($post->foto_h) 
+                                    ? base_url("assets/frontend/campur/noimage_paket.jpg") 
+                                    : base_url("assets/frontend/harga/".$post->foto_h);
+                                ?>
+                                <img src="<?= $img ?>">
+                            </a>
                         </div>
-                       
+
+                        <!-- KONTEN -->
+                        <div class="card-body">
+
+                            <div class="card-info">
+                                <div class="nama"><?= $post->namabisnis ?></div>
+                                <div class="lokasi"><?= $post->user_company_judul ?> <?= $post->nama ?></div>
+                            </div>
+
+                            <div class="card-harga">
+                                <?php
+                                $harga = (int)$post->harga;
+                                $diskon = (int)$post->harga_diskon;
+
+                                if($diskon > 0){
+                                    $final = $harga - $diskon;
+                                ?>
+                                    <div class="harga-asli">Rp<?= number_format($harga,0,',','.') ?></div>
+                                    <div class="harga-final">Rp<?= number_format($final,0,',','.') ?></div>
+                                <?php } else { ?>
+                                    <div class="harga-final">Rp<?= number_format($harga,0,',','.') ?></div>
+                                <?php } ?>
+                            </div>
+
+                        </div>
                     </div>
-                  </div>
+                </div>
                 <?php } ?>
 
                 <!-- SLIDE TAMBAHAN -->

@@ -11,104 +11,98 @@
 
 <style> 
 
-.radius-tops {
+/* CARD */
+.card-gedung {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: 0.2s;
+}
+
+/* GAMBAR */
+.card-img {
     width: 100%;
-    aspect-ratio: 4/5; /* rekomendasi: 1080x1350 */
+    aspect-ratio: 4/5;
     overflow: hidden;
 }
 
-.img-gedung {
+.card-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: 0.3s;
 }
 
-.img-gedung {
-    transition: transform 0.3s ease;
+.card-gedung:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
 }
 
-.hotel-item:hover .img-gedung {
+.card-gedung:hover img {
     transform: scale(1.05);
 }
 
-
-/* CARD UTAMA */
-.card-gedung {
+/* BODY */
+.card-body {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 100%;
-}
-
-/* BAGIAN TEKS */
-.card-gedung .title {
+    padding: 10px;
     flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
-/* JUDUL BISNIS (batasi 2 baris) */
-.card-gedung .title span.f-16:first-child {
+/* INFO */
+.card-info {
+    flex-grow: 1;
+}
+
+/* NAMA */
+.nama {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 4px;
+
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
 
-/* DESKRIPSI (batasi 2 baris) */
-.card-gedung .f-11 {
+/* LOKASI */
+.lokasi {
+    font-size: 12px;
+    color: #777;
+
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
 
-/* HARGA SELALU DI BAWAH */
-.card-gedung .title strong {
-    margin-top: auto;
-}
-
-/* OPTIONAL: tinggi minimal biar rata */
-.card-gedung {
-    min-height: 320px;
-}
-
-
-.titles {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* INI KUNCINYA */
-    height: 130px; /* atau 130px, sesuaikan */
-}
-
-.infos {
-    overflow: hidden;
-}
-
-.hargas {
+/* HARGA */
+.card-harga {
     margin-top: 8px;
 }
 
-/* batasi judul */
-.nama-bisnis {
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    font-size: 14px;
-}
-
-/* batasi lokasi */
-.lokasi {
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+/* HARGA CORET */
+.harga-asli {
     font-size: 12px;
+    color: #999;
+    text-decoration: line-through;
 }
 
+/* HARGA FINAL */
+.harga-final {
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+}
 
+/* SWIPER FIX */
 .swiper-wrapper {
     display: flex;
     align-items: stretch !important;
@@ -117,10 +111,6 @@
 .swiper-slide {
     height: auto !important;
     display: flex;
-}
-
-.hotel-item {
-    height: 100%;
 }
 
 </style>
