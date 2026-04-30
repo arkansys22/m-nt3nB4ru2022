@@ -28,6 +28,7 @@
     width: 100%;
     aspect-ratio: 4/5;
     overflow: hidden;
+    position: relative;
 }
 
 .card-img img {
@@ -88,18 +89,55 @@
     margin-top: 8px;
 }
 
-/* HARGA CORET */
+/* BARIS ATAS (harga coret + badge) */
+.harga-row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* HARGA ASLI */
 .harga-asli {
     font-size: 12px;
     color: #999;
     text-decoration: line-through;
 }
 
+/* BADGE DISKON */
+.badge-diskon {
+    background: #ff4d4f;
+    color: #fff;
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.badge-diskon-top {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background: #ff4d4f;
+    color: #fff;
+    font-size: 11px;
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
 /* HARGA FINAL */
 .harga-final {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
-    color: #000;
+    color: #222;
+    margin-top: 2px;
+}
+
+/* HEMAT */
+.hemat {
+    font-size: 11px;
+    color: #16a34a; /* hijau */
+    margin-top: 2px;
 }
 
 /* SWIPER FIX */

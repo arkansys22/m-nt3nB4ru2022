@@ -179,7 +179,19 @@
                                 $img = empty($post->foto_h) 
                                     ? base_url("assets/frontend/campur/noimage_paket.jpg") 
                                     : base_url("assets/frontend/harga/".$post->foto_h);
+
+                                $harga = (int)$post->harga;
+                                $diskon = (int)$post->harga_diskon;
+
+                                if($diskon > 0){
+                                    $persen = ($diskon / $harga) * 100;
                                 ?>
+                                    <!-- BADGE DI SINI -->
+                                    <div class="badge-diskon-top">
+                                        <?= number_format($persen,0) ?>%
+                                    </div>
+                                <?php } ?>
+
                                 <img src="<?= $img ?>">
                             </a>
                         </div>
@@ -199,11 +211,31 @@
 
                                 if($diskon > 0){
                                     $final = $harga - $diskon;
+                                    $persen = ($diskon / $harga) * 100;
                                 ?>
-                                    <div class="harga-asli">Rp<?= number_format($harga,0,',','.') ?></div>
-                                    <div class="harga-final">Rp<?= number_format($final,0,',','.') ?></div>
+                                    <div class="harga-row">
+                                        <span class="harga-asli">
+                                            Rp<?= number_format($harga,0,',','.') ?>
+                                        </span>
+
+                                        <span class="badge-diskon">
+                                            <?= number_format($persen,0) ?>%
+                                        </span>
+                                    </div>
+
+                                    <div class="harga-final">
+                                        Rp<?= number_format($final,0,',','.') ?>
+                                    </div>
+
+                                    <div class="hemat">
+                                        Hemat Rp<?= number_format($diskon,0,',','.') ?>
+                                    </div>
+
                                 <?php } else { ?>
-                                    <div class="harga-final">Rp<?= number_format($harga,0,',','.') ?></div>
+
+                                    <div class="harga-final">
+                                        Rp<?= number_format($harga,0,',','.') ?>
+                                    </div>
                                 <?php } ?>
                             </div>
 
