@@ -25,6 +25,7 @@
 
   </head>
   <body data-color="theme-1">
+    <?php $this->load->view('fronts/loader')?>
     <?php $this->load->view('fronts/header')?>
     <div class="inner-banner">
 
@@ -169,7 +170,7 @@
 
                 ?>
                 <div class="swiper-slides">
-                    <div class="hotel-items">
+                    <div class="hotel-item">
                        <div class="radius-tops">
                          <a href="<?php echo base_url("harga-detail/$post->judul_seo") ?>">
                          <?php 

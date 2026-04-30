@@ -86,7 +86,7 @@
 }
 
 /* batasi judul */
-.nama-bisnis {
+.nama-bisniss {
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
@@ -95,7 +95,7 @@
 }
 
 /* batasi lokasi */
-.lokasi {
+.lokasis {
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
