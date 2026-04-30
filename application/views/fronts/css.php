@@ -33,4 +33,61 @@
     transform: scale(1.05);
 }
 
+
+/* CARD UTAMA */
+.card-gedung {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* BAGIAN TEKS */
+.card-gedung .title {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* JUDUL BISNIS (batasi 2 baris) */
+.card-gedung .title span.f-16:first-child {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* DESKRIPSI (batasi 2 baris) */
+.card-gedung .f-11 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* HARGA SELALU DI BAWAH */
+.card-gedung .title strong {
+    margin-top: auto;
+}
+
+/* OPTIONAL: tinggi minimal biar rata */
+.card-gedung {
+    min-height: 320px;
+}
+
+
+.title {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.info {
+    flex-grow: 1;
+}
+
+.harga {
+    margin-top: auto;
+}
+
 </style>
