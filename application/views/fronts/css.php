@@ -25,4 +25,12 @@
     display: block;
 }
 
+.img-gedung {
+    transition: transform 0.3s ease;
+}
+
+.hotel-item:hover .img-gedung {
+    transform: scale(1.05);
+}
+
 </style>
