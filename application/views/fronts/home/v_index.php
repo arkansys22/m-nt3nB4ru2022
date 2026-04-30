@@ -209,6 +209,18 @@
                     </div>
                   </div>
                 <?php } ?>
+
+                <!-- SLIDE TAMBAHAN -->
+                <div class="swiper-slide">
+                  <div class="hotel-item" style="background:#f5f5f5;text-align:center;padding:40px;">
+                    <h4>Lihat Semua Gedung</h4>
+                    <p>Temukan lebih banyak pilihan</p>
+                    <a href="<?php echo base_url()?>vendors/kategori/gedung" 
+                       class="c-button small bg-dr-blue-2 hv-dr-blue-2-o">
+                       Lihat Sekarang
+                    </a>
+                  </div>
+                </div>
 						  </div>
 						<div class="pagination"></div>
 							<div class="swiper-arrow-left arrows-travel"><span class="fa fa-angle-left"></span></div>
