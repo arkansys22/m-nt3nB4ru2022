@@ -90,12 +90,12 @@
 }
 
 
-.swiper-wrappers {
+.swiper-wrapper {
     display: flex;
     align-items: stretch !important;
 }
 
-.swiper-slides {
+.swiper-slide {
     height: auto !important;
     display: flex;
 }

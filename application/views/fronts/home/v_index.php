@@ -194,24 +194,25 @@
                         <?php }?>
                        </div>
 
-                        <div class="titles">
-                            <div class="infos">
-                                <span class="nama-bisnis"><?= $post->namabisnis ?></span>
-                                <span class="lokasi"><?= $post->user_company_judul ?> <?= $post->nama ?></span>
-                            </div>
-
-                            <div class="hargas">
-                                <?php
-                                if(empty($post->harga_diskon)) { ?>
-                                <span class="f-16"><strong>Rp<?php echo number_format($post->harga,0,',','.')?></strong></span>
-                                <?php }else if($a = $post->harga - $post->harga_diskon ){?>
-                                  <span class="f-11" font-size="20px" style="color:grey"><del>Rp<?php echo number_format($post->harga,0,',','.')?></del></span>
-                                  <br>  
-                                  <span class ="f-16"><strong>Rp<?php echo number_format($a,0,',','.')?></strong>
-                                <?php }?>
-                            </div>
-                        </div>
                        
+                       <div class="title clearfix">
+                         <span class="f-16" font-size="40px"><?php echo $post->namabisnis?></span>
+                         <br>
+                          <span class="f-11 color-dark-2">
+                            <?php echo $post->user_company_judul?> <?php echo $post->nama?>
+                            <br>
+                            <?php
+                            if(empty($post->harga_diskon)) { ?>
+                            <span class="f-16"><strong>Rp<?php echo number_format($post->harga,0,',','.')?></strong></span>
+                            <?php }else if($a = $post->harga - $post->harga_diskon ){?>
+                              <span class="f-11" font-size="20px" style="color:grey"><del>Rp<?php echo number_format($post->harga,0,',','.')?></del></span>
+                              <br>  
+                              <span class ="f-16"><strong>Rp<?php echo number_format($a,0,',','.')?></strong>
+                            <?php }?>
+                          </span>
+                          <!-- <br> -->
+                        <!-- <span class="f-11 color-dark-2"><?php echo $post->user_company_judul?> <?php echo $post->nama?></span> -->
+                       </div>
                     </div>
                   </div>
                 <?php } ?>
