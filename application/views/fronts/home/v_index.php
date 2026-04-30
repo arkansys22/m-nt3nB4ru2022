@@ -163,7 +163,7 @@
     		<div class="row">
     			   <div class="arrows">
     				<div class="swiper-container hotel-slider" data-speed="1000" data-center="0" data-slides-per-view="responsive" data-mob-slides="1" data-xs-slides="2" data-sm-slides="2" data-md-slides="3" data-lg-slides="5" data-add-slides="5" >
-						  <div class="swiper-wrapper2">
+						  <div class="swiper-wrapper">
                 <?php
                       foreach ($post_gedung as $post) {
              
@@ -213,7 +213,7 @@
                 <?php } ?>
 
                 <!-- SLIDE TAMBAHAN -->
-                <div class="swiper-slide2">
+                <div class="swiper-slide">
                   <div class="card-cta">
 
                     <div class="cta-content">
