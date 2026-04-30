@@ -25,7 +25,6 @@
 
   </head>
   <body data-color="theme-1">
-    <?php $this->load->view('fronts/loader')?>
     <?php $this->load->view('fronts/header')?>
     <div class="inner-banner">
 
