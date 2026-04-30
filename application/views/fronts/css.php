@@ -183,7 +183,7 @@
 }
 
 .cta-button:hover {
-    background: #facc15;
+    background: #c9065f;
     color: #000;
 }
 
