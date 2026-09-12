@@ -27,3 +27,6 @@
     src="https://www.facebook.com/tr?id=1243586674431624&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Meta Pixel Code -->
+
+
+    <meta name="facebook-domain-verification" content="2mgcm0n5mxztftaha1wv698dwpny7g" />
